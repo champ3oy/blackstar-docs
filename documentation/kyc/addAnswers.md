@@ -86,7 +86,7 @@
     }
   ],
   "kycFormDTO": {
-    // KYC form structure details (omitted for brevity)
+    // 
   },
   "errorMessage": null,
   "email": "user@example.com",
