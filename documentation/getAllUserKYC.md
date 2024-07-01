@@ -259,5 +259,3 @@ These examples should help you get started with integrating this API endpoint in
 6. The `kycFormDTO` in the response provides the complete structure of the KYC form, including sections, subsections, and questions.
 7. Pagination metadata in the response allows for easy implementation of paginated interfaces.
 8. The API returns a 200 OK status for successful requests, even if the result set is empty.
-
-This API is designed to provide comprehensive KYC information with flexible querying options, making it suitable for administrative interfaces and reporting tools in KYC management systems.

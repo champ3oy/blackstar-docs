@@ -101,5 +101,3 @@ axios
 9. Some implementations might also issue a new refresh token with each refresh. If so, make sure to update both tokens in your application.
 
 10. Be aware of the security implications of refresh tokens. If a refresh token is compromised, an attacker could potentially maintain access to the account for an extended period.
-
-This API endpoint provides a way for client applications to maintain user sessions over longer periods without requiring frequent full re-authentication. It's a crucial part of OAuth 2.0 and similar authentication flows.

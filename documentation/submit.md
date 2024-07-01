@@ -145,5 +145,3 @@ else:
 - The `kycId` in the URL should be a valid UUID of an existing KYC application.
 - The response includes detailed information about the submitted KYC, including user answers, form structure, and current status.
 - Handle potential errors by checking the response status code and the `errorMessage` field in the response body.
-
-Would you like me to explain any specific part of this documentation or move on to the next endpoint?

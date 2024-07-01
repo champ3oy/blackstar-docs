@@ -1,5 +1,3 @@
-Here's a detailed documentation for the "Delete KYC File" API endpoint:
-
 # Delete KYC File
 
 This endpoint allows for the deletion of a specific document uploaded for a KYC (Know Your Customer) process.
@@ -80,5 +78,3 @@ axios
 6. It's a good practice to confirm the deletion with the user before making this API call, as it's a destructive operation.
 7. Error handling should be implemented to manage cases where the KYC or document IDs are not found, or if the user doesn't have permission to delete the document.
 8. Consider logging this action for audit purposes, as document deletion in KYC processes may need to be tracked for compliance reasons.
-
-This API endpoint provides a way to remove specific documents from a KYC record, which can be useful for updating information or removing outdated or incorrect documents during the KYC process.

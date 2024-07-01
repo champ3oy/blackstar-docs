@@ -152,5 +152,3 @@ axios
 3. The response includes detailed information about the KYC submission, including the form structure and the user's answers.
 4. Handle potential errors by checking the `errorMessage` field in the response.
 5. The `kycStatus` field indicates the current status of the KYC process for the user.
-
-Remember to replace `https://api.example.com` with the actual base URL of your API when making requests.

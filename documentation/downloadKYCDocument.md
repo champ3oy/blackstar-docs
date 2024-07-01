@@ -86,5 +86,3 @@ Ensure your application handles these potential error scenarios gracefully.
 1. Ensure that only authorized users can access this endpoint.
 2. Validate the `kycId` and `docId` on the server-side to prevent unauthorized access to documents.
 3. Consider implementing rate limiting to prevent abuse of the API.
-
-Remember to replace `https://api.example.com` with the actual base URL of your API when making requests.

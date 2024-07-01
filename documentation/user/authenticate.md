@@ -94,5 +94,3 @@ axios
 8. The exact authentication mechanism (e.g., JWT, session-based) is not specified and may vary based on the system's implementation.
 
 9. After successful authentication, you may need to include the received authentication token in the headers of subsequent API requests to access protected endpoints.
-
-This API endpoint provides a way for users to authenticate with the system. Given its potential to bypass OTP, it should be used judiciously and with a clear understanding of the security implications.

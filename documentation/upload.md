@@ -99,5 +99,3 @@ uploadKYCFiles();
 - You can upload multiple files in a single request by adding multiple `files` fields in the form data.
 - The response will contain UUIDs for each successfully uploaded file, which can be used to reference these files in future API calls.
 - Handle potential errors by checking the response status code and any error messages in the response body.
-
-Would you like me to clarify any part of this documentation or move on to the next endpoint?

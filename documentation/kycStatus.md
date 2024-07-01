@@ -150,5 +150,3 @@ axios
 5. The `kycFormDTO` object contains the complete structure of the KYC form, including all sections, subsections, and questions.
 6. The `userKYCAnswerList` provides the user's responses to the KYC questions.
 7. The `currentSectionIdentifier` indicates which section of the KYC form the user is currently on or has last completed.
-
-Remember to replace `https://api.example.com` with the actual base URL of your API when making requests.

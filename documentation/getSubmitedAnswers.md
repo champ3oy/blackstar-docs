@@ -111,5 +111,3 @@ axios
 5. For multiple-choice questions, check the `multipleChoiceAnswer` array for selected options.
 6. If no answers are found for the given KYC ID and subsection, the API will return an empty array.
 7. Ensure proper error handling in your code to deal with potential API errors or empty responses.
-
-Remember to replace `https://api.example.com` with the actual base URL of your API when making requests.

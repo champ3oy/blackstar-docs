@@ -89,5 +89,3 @@ axios
 6. If there are any issues with the user's KYC, the `errorMessage` and `rejectionReason` fields may contain relevant information.
 7. The `currentSectionIdentifier` can be used to determine which part of the KYC process the user is currently on, which may be useful for multi-step KYC processes.
 8. This endpoint does not require any parameters as it retrieves information for the authenticated user based on their access token.
-
-This API endpoint provides a comprehensive view of a user's KYC information, including their submitted answers and the full structure of the KYC form. It can be used to display the user's KYC status, review their submitted information, or continue an in-progress KYC process.

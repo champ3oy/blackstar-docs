@@ -105,5 +105,3 @@ axios
 5. The `optionValues` array within each question object is used for questions that have predefined answer choices, such as multiple-choice questions.
 6. The `version` fields throughout the response allow for tracking changes to different components of the KYC form over time.
 7. The `visibilityOrder` fields can be used to determine the display order of sections, subsections, questions, and options in the user interface.
-
-This API endpoint provides a comprehensive structure for KYC forms, allowing for dynamic form generation based on the client subtype. It supports complex form structures with repeatable sections and various question types.
