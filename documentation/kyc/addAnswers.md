@@ -31,9 +31,9 @@
   "phone": "+1234567890",
   "clientSubTypeId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
   "questionAnswer": {
-    "question1": { "answer": "Response 1" },
-    "question2": { "answer": "Response 2" },
-    "question3": { "answer": "Response 3" }
+    "questionIdentifier": "answer",
+    "questionIdentifier": "answer",
+    "questionIdentifier": "answer"
   }
 }
 ```
@@ -108,9 +108,9 @@ curl -X POST "https://api.example.com/api/kyc/add" \
   "phone": "+1234567890",
   "clientSubTypeId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
   "questionAnswer": {
-    "question1": { "answer": "Response 1" },
-    "question2": { "answer": "Response 2" },
-    "question3": { "answer": "Response 3" }
+    "questionIdentifier": "answer",
+    "questionIdentifier": "answer",
+    "questionIdentifier": "answer"
   }
 }'
 ```
@@ -125,9 +125,9 @@ const data = {
   phone: "+1234567890",
   clientSubTypeId: "3fa85f64-5717-4562-b3fc-2c963f66afa6",
   questionAnswer: {
-    question1: { answer: "Response 1" },
-    question2: { answer: "Response 2" },
-    question3: { answer: "Response 3" },
+    questionIdentifier: "answer",
+    questionIdentifier: "answer",
+    questionIdentifier: "answer",
   },
 };
 
