@@ -17,8 +17,6 @@ This endpoint allows users to authenticate and log in to the system.
 
 ### Request Body
 
-The request body should be a JSON object. While the exact structure is not provided in the given information, it's likely to include authentication credentials such as:
-
 ```json
 {
   "email": "string",
@@ -32,7 +30,7 @@ The request body should be a JSON object. While the exact structure is not provi
 - **Content-Type**: application/json
 
 
-### Response
+### Body
 ```json
 {
     "userId": "83d93f37-e143-4168-b833-8dbf238bc546",
