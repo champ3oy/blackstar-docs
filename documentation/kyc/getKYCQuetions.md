@@ -103,19 +103,6 @@ The response body contains a JSON object with the following structure:
                             "optionValues": []
                         },
                         {
-                            "id": "823edbd0-6958-407b-ad3a-f5e6ee8ca9de",
-                            "question": "Address line",
-                            "questionType": "MULTI_LINE",
-                            "description": null,
-                            "visibilityOrder": 1,
-                            "identifier": "22aacf43086d4136a3918792797edccf",
-                            "showInGrid": false,
-                            "version": 4,
-                            "required": false,
-                            "kycValue": null,
-                            "optionValues": []
-                        },
-                        {
                             "id": "f1022538-238f-41bb-9a1d-1545212e44fc",
                             "question": "Region",
                             "questionType": "SINGLE_LINE",
