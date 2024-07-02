@@ -26,14 +26,27 @@ The request body should be a JSON object. While the exact structure is not provi
 }
 ```
 
-## Response
-
 ### Success Response
 
 - **Code**: 200 OK
 - **Content-Type**: application/json
 
-The exact structure of the response body is not provided, but it's likely to include an authentication token or session information.
+
+### Response
+```json
+{
+    "userId": "83d93f37-e143-4168-b833-8dbf238bc546",
+    "email": "test@blackstargroup.ai",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "pinEnabled": false,
+    "accessToken": "eyJhbGciOiJSUzI1NiIs...",
+    "refreshToken": "eyJhbGciOiJIUzI1NiC...",
+    "clientId": "910c8839-XXXX-XXXX-XXXX-26eed7adc026",
+    "clientCode": "JWXXXXXX",
+    "hasPortfolios": true
+}
+```
 
 ## Example Usage
 
