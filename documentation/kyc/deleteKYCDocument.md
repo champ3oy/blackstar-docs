@@ -28,9 +28,9 @@ The response body contains a JSON object. The exact structure is not specified i
 
 ```json
 {
-  "additionalProp1": {},
-  "additionalProp2": {},
-  "additionalProp3": {}
+  "identifier1": {},
+  "identifier2": {},
+  "identifier3": {}
 }
 ```
 

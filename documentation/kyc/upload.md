@@ -37,9 +37,9 @@ Uploads a file for a Know Your Customer (KYC) application.
 
 ```json
 {
-  "additionalProp1": "string (UUID)",
-  "additionalProp2": "string (UUID)",
-  "additionalProp3": "string (UUID)"
+  "identifier1": "string (UUID)",
+  "identifier2": "string (UUID)",
+  "identifier3": "string (UUID)"
 }
 ```
 

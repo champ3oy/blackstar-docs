@@ -47,6 +47,89 @@ The response body contains a JSON object with the following structure:
 - `rejectionReason` (string): Reason for KYC rejection, if applicable
 - `currentSectionIdentifier` (string): Identifier of the current section in the KYC process
 
+### Response Body
+```json
+{
+  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "userId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "updatedOn": "2024-07-02T15:53:34.191Z",
+  "kycStatus": "VERIFIED",
+  "name": "string",
+  "userKYCAnswerList": [
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "answer": "string",
+      "questionIdentifier": "string",
+      "question": "string",
+      "sectionIdentifier": "string",
+      "sectionName": "string",
+      "subSectionIdentifier": "string",
+      "subSectionName": "string",
+      "questionType": "DATE",
+      "multipleChoiceAnswer": [
+        "string"
+      ]
+    }
+  ],
+  "kycFormDTO": {
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "name": "string",
+    "description": "string",
+    "version": 0,
+    "kycFormSections": [
+      {
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "name": "string",
+        "description": "string",
+        "visibilityOrder": 0,
+        "repeat": true,
+        "identifier": "string",
+        "version": 0,
+        "maxRepetition": 0,
+        "kycFormSubSections": [
+          {
+            "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "name": "string",
+            "description": "string",
+            "visibilityOrder": 0,
+            "identifier": "string",
+            "version": 0,
+            "kycFormQuestions": [
+              {
+                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "question": "string",
+                "questionType": "DATE",
+                "description": "string",
+                "visibilityOrder": 0,
+                "identifier": "string",
+                "showInGrid": true,
+                "version": 0,
+                "required": true,
+                "kycValue": "string",
+                "optionValues": [
+                  {
+                    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "optionValue": "string",
+                    "visibilityOrder": 0,
+                    "visible": true,
+                    "version": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "errorMessage": "string",
+  "email": "string",
+  "phone": "string",
+  "rejectionReason": "string",
+  "currentSectionIdentifier": "string"
+}
+```
+
 ## Example Usage
 
 ### cURL

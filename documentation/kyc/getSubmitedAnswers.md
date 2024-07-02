@@ -49,28 +49,29 @@ The response is an array of objects, each representing an answer to a KYC questi
 [
   {
     "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-    "answer": "Software Engineer",
-    "questionIdentifier": "Q1",
-    "question": "What is your current occupation?",
+    "answer": "1234567890001",
+    "questionIdentifier": "b619569d86884806860d39c7598ca4a1",
+    "question": "Account Number",
     "sectionIdentifier": "S1",
-    "sectionName": "Employment Information",
-    "subSectionIdentifier": "SS1",
-    "subSectionName": "Current Employment",
-    "questionType": "TEXT",
+    "sectionName": "Personal Information",
+    "subSectionIdentifier": "e619569d86884806860d39c7598ca4a1",
+    "subSectionName": "Account Information",
+    "questionType": "NUMERIC",
     "multipleChoiceAnswer": []
   },
   {
     "id": "4fa85f64-5717-4562-b3fc-2c963f66afa7",
     "answer": "2022-03-15",
     "questionIdentifier": "Q2",
-    "question": "When did you start your current job?",
-    "sectionIdentifier": "S1",
-    "sectionName": "Employment Information",
-    "subSectionIdentifier": "SS1",
-    "subSectionName": "Current Employment",
+    "question": "Date of Birth",
+    "sectionIdentifier": "a619569d86884806860d39c7598ca4a1",
+    "sectionName": "Personal Information",
+    "subSectionIdentifier": "c619569d86884806860d39c7598ca4a1",
+    "subSectionName": "User Information",
     "questionType": "DATE",
     "multipleChoiceAnswer": []
-  }
+  },
+  ...
 ]
 ```
 

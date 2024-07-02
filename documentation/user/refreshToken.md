@@ -17,11 +17,9 @@ This endpoint allows users to refresh their access token, typically used to exte
 
 ### Request Body
 
-The request body should be a JSON object. While the exact structure is not provided, it's likely to include the current refresh token:
-
 ```json
 {
-  "refreshToken": "string"
+  "refreshToken": "eyJhbGciOiJSUzI1NiIs..."
 }
 ```
 
@@ -32,12 +30,10 @@ The request body should be a JSON object. While the exact structure is not provi
 - **Code**: 200 OK
 - **Content-Type**: application/json
 
-The response body is likely to contain a new access token and possibly a new refresh token:
-
 ```json
 {
-  "accessToken": "string",
-  "refreshToken": "string",
+  "accessToken": "eyJhbGciOiJSAeyi1Icuwc...",
+  "refreshToken": "eyJhbGciOiJSUzI1weYow...",
   "expiresIn": 3600
 }
 ```
@@ -86,7 +82,7 @@ axios
 
 2. The primary purpose of this endpoint is to allow users to obtain a new access token without having to re-enter their credentials.
 
-3. Refresh tokens are typically long-lived compared to access tokens. Ensure your application securely stores and manages refresh tokens.
+3. Refresh token is long-lived compared to the access token. Ensure your application securely stores and manages refresh tokens.
 
 4. If the refresh token is expired or invalid, this endpoint should return an error, and the user may need to re-authenticate fully.
 
