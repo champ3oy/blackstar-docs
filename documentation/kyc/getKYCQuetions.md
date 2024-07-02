@@ -63,6 +63,25 @@ The response body contains a JSON object with the following structure:
         - `visible` (boolean): Whether the option is visible
         - `version` (integer): Version number of the option
 
+### Question Types
+
+Under `kycFormQuestions` each question comes with a `questionType` field that indicates what type of date to collect.
+
+| Type            | Description                                     |
+| --------------- | ----------------------------------------------- |
+| DATE            | Used to capture date inputs                     |
+| MULTI_LINE      | Allows input of multiple lines of text          |
+| MULTIPLE_CHOICE | Provides a list of options to choose from       |
+| SINGLE_CHOICE   | Allows selection of a single option from a list |
+| PHOTO           | Used to upload a photo                          |
+| FILE            | Used to upload a file                           |
+| CAMERA_PHOTO    | Captures a photo using the device camera        |
+| FRONT_PHOTO     | Upload a front-facing photo                     |
+| BACK_PHOTO      | Upload a back-facing photo                      |
+| PHONE_NUMBER    | Used to input a phone number                    |
+| NUMERIC         | Allows input of numeric values only             |
+| SINGLE_LINE     | Allows input of a single line of text           |
+
 ## Example Usage
 
 ### cURL
