@@ -21,7 +21,7 @@ The request body should be a JSON object. While the exact structure is not provi
 
 ```json
 {
-  "username": "string",
+  "email": "string",
   "password": "string"
 }
 ```
@@ -44,7 +44,7 @@ curl -X POST "https://api.example.com/api/public/user/authenticate" \
      -H "Content-Type: application/json" \
      -H "Accept: application/json" \
      -d '{
-           "username": "your_username",
+           "email": "your_email",
            "password": "your_password"
          }'
 ```
@@ -56,7 +56,7 @@ const axios = require("axios");
 
 const url = "https://api.example.com/api/public/user/authenticate";
 const data = {
-  username: "your_username",
+  email: "your_email",
   password: "your_password",
 };
 
