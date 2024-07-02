@@ -54,7 +54,7 @@ The response is an array of JSON objects, each representing a position. Each obj
 CURL:
 
 ```bash
-curl -X POST "https://api.example.com/api/client/123e4567-e89b-12d3-a456-426614174000/position?portfolioId=abcdef12-e89b-12d3-a456-426614174000&date=13-01-2020" \
+curl -X POST "https://api.uatdev.gnii.ai/api/client/123e4567-e89b-12d3-a456-426614174000/position?portfolioId=abcdef12-e89b-12d3-a456-426614174000&date=13-01-2020" \
      -H "Content-Type: application/json" \
      -H "Accept: application/json" \
      -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
@@ -96,7 +96,7 @@ const data = {
 
 axios
   .post(
-    "https://api.example.com/api/client/123e4567-e89b-12d3-a456-426614174000/position",
+    "https://api.uatdev.gnii.ai/api/client/123e4567-e89b-12d3-a456-426614174000/position",
     data,
     {
       params: {

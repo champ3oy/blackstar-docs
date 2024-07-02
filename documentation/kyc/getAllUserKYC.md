@@ -175,7 +175,7 @@
 ## cURL
 
 ```bash
-curl -X POST 'https://api.example.com/api/kyc/get/all?page=1&size=10' \
+curl -X POST 'https://api.uatdev.gnii.ai/api/kyc/get/all?page=1&size=10' \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 -d '{
@@ -187,7 +187,7 @@ curl -X POST 'https://api.example.com/api/kyc/get/all?page=1&size=10' \
 }'
 ```
 
-Replace `https://api.example.com` with your actual API base URL and `YOUR_ACCESS_TOKEN` with a valid access token.
+Replace `https://api.uatdev.gnii.ai` with your actual API base URL and `YOUR_ACCESS_TOKEN` with a valid access token.
 
 ## JavaScript (Axios)
 
@@ -198,7 +198,7 @@ async function getAllUserKYC() {
   try {
     const response = await axios({
       method: "post",
-      url: "https://api.example.com/api/kyc/get/all",
+      url: "https://api.uatdev.gnii.ai/api/kyc/get/all",
       params: {
         page: 1,
         size: 10,
@@ -235,7 +235,7 @@ async function getAllUserKYC() {
 getAllUserKYC();
 ```
 
-Remember to replace `https://api.example.com` with your actual API base URL and `YOUR_ACCESS_TOKEN` with a valid access token.
+Remember to replace `https://api.uatdev.gnii.ai` with your actual API base URL and `YOUR_ACCESS_TOKEN` with a valid access token.
 
 ### Notes on the JavaScript example:
 

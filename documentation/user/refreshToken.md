@@ -47,7 +47,7 @@ The response body is likely to contain a new access token and possibly a new ref
 ### cURL
 
 ```bash
-curl -X POST "https://api.example.com/api/public/user/refresh-token" \
+curl -X POST "https://api.uatdev.gnii.ai/api/public/user/refresh-token" \
      -H "Content-Type: application/json" \
      -H "Accept: application/json" \
      -d '{
@@ -60,7 +60,7 @@ curl -X POST "https://api.example.com/api/public/user/refresh-token" \
 ```javascript
 const axios = require("axios");
 
-const url = "https://api.example.com/api/public/user/refresh-token";
+const url = "https://api.uatdev.gnii.ai/api/public/user/refresh-token";
 const data = {
   refreshToken: "your_current_refresh_token",
 };

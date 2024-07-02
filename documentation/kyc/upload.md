@@ -50,7 +50,7 @@ The response contains key-value pairs where the key is the filename or a propert
 ### cURL
 
 ```bash
-curl -X POST "https://api.example.com/api/kyc/123e4567-e89b-12d3-a456-426614174000/upload" \
+curl -X POST "https://api.uatdev.gnii.ai/api/kyc/123e4567-e89b-12d3-a456-426614174000/upload" \
      -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
      -H "Content-Type: multipart/form-data" \
      -F "files=@/path/to/document1.pdf" \
@@ -66,7 +66,7 @@ const fs = require("fs");
 
 async function uploadKYCFiles() {
   const kycId = "123e4567-e89b-12d3-a456-426614174000";
-  const url = `https://api.example.com/api/kyc/${kycId}/upload`;
+  const url = `https://api.uatdev.gnii.ai/api/kyc/${kycId}/upload`;
 
   const formData = new FormData();
   formData.append("files", fs.createReadStream("/path/to/document1.pdf"));

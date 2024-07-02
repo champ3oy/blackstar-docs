@@ -87,7 +87,7 @@ Under `kycFormQuestions` each question comes with a `questionType` field that in
 ### cURL
 
 ```bash
-curl -X GET "https://api.example.com/api/kyc/3fa85f64-5717-4562-b3fc-2c963f66afa6/get-kyc" \
+curl -X GET "https://api.uatdev.gnii.ai/api/kyc/3fa85f64-5717-4562-b3fc-2c963f66afa6/get-kyc" \
      -H "Accept: application/json" \
      -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
 ```
@@ -98,7 +98,7 @@ curl -X GET "https://api.example.com/api/kyc/3fa85f64-5717-4562-b3fc-2c963f66afa
 const axios = require("axios");
 
 const clientSubTypeId = "3fa85f64-5717-4562-b3fc-2c963f66afa6";
-const url = `https://api.example.com/api/kyc/${clientSubTypeId}/get-kyc`;
+const url = `https://api.uatdev.gnii.ai/api/kyc/${clientSubTypeId}/get-kyc`;
 
 axios
   .get(url, {

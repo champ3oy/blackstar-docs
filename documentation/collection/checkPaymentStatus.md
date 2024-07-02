@@ -27,7 +27,7 @@ This endpoint does not require a request body.
 ##### cURL
 
 ```bash
-curl -X GET "https://api.example.com/api/client/{clientId}/collectionRequest/{collectionRequestId}/checkStatus" \
+curl -X GET "https://api.uatdev.gnii.ai/api/client/{clientId}/collectionRequest/{collectionRequestId}/checkStatus" \
 -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
 ```
 
@@ -38,7 +38,7 @@ const axios = require("axios");
 
 axios
   .get(
-    "https://api.example.com/api/client/{clientId}/collectionRequest/{collectionRequestId}/checkStatus",
+    "https://api.uatdev.gnii.ai/api/client/{clientId}/collectionRequest/{collectionRequestId}/checkStatus",
     {
       headers: {
         Authorization: "Bearer YOUR_ACCESS_TOKEN",

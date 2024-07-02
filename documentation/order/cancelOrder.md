@@ -71,7 +71,7 @@ The response body contains detailed information about the canceled order. Here a
 ### cURL
 
 ```bash
-curl -X POST "https://api.example.com/api/client/3fa85f64-5717-4562-b3fc-2c963f66afa6/order/3fa85f64-5717-4562-b3fc-2c963f66afa6/cancel" \
+curl -X POST "https://api.uatdev.gnii.ai/api/client/3fa85f64-5717-4562-b3fc-2c963f66afa6/order/3fa85f64-5717-4562-b3fc-2c963f66afa6/cancel" \
      -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
 ```
 
@@ -85,7 +85,7 @@ const orderId = "3fa85f64-5717-4562-b3fc-2c963f66afa6";
 
 axios
   .post(
-    `https://api.example.com/api/client/${clientId}/order/${orderId}/cancel`,
+    `https://api.uatdev.gnii.ai/api/client/${clientId}/order/${orderId}/cancel`,
     {},
     {
       headers: {

@@ -52,7 +52,7 @@ The response body contains a JSON object with the following structure:
 ### cURL
 
 ```bash
-curl -X GET "https://api.example.com/api/kyc/get" \
+curl -X GET "https://api.uatdev.gnii.ai/api/kyc/get" \
      -H "Accept: application/json" \
      -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
 ```
@@ -62,7 +62,7 @@ curl -X GET "https://api.example.com/api/kyc/get" \
 ```javascript
 const axios = require("axios");
 
-const url = "https://api.example.com/api/kyc/get";
+const url = "https://api.uatdev.gnii.ai/api/kyc/get";
 
 axios
   .get(url, {

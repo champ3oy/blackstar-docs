@@ -40,7 +40,7 @@ The exact structure of the response body is not provided, but it's likely to inc
 ### cURL
 
 ```bash
-curl -X POST "https://api.example.com/api/public/user/authenticate" \
+curl -X POST "https://api.uatdev.gnii.ai/api/public/user/authenticate" \
      -H "Content-Type: application/json" \
      -H "Accept: application/json" \
      -d '{
@@ -54,7 +54,7 @@ curl -X POST "https://api.example.com/api/public/user/authenticate" \
 ```javascript
 const axios = require("axios");
 
-const url = "https://api.example.com/api/public/user/authenticate";
+const url = "https://api.uatdev.gnii.ai/api/public/user/authenticate";
 const data = {
   username: "your_username",
   password: "your_password",

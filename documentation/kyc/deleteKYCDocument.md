@@ -39,7 +39,7 @@ The response body contains a JSON object. The exact structure is not specified i
 ### cURL
 
 ```bash
-curl -X DELETE "https://api.example.com/api/kyc/3fa85f64-5717-4562-b3fc-2c963f66afa6/document/3fa85f64-5717-4562-b3fc-2c963f66afa6/delete" \
+curl -X DELETE "https://api.uatdev.gnii.ai/api/kyc/3fa85f64-5717-4562-b3fc-2c963f66afa6/document/3fa85f64-5717-4562-b3fc-2c963f66afa6/delete" \
      -H "Accept: application/json" \
      -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
 ```
@@ -51,7 +51,7 @@ const axios = require("axios");
 
 const kycId = "3fa85f64-5717-4562-b3fc-2c963f66afa6";
 const docId = "3fa85f64-5717-4562-b3fc-2c963f66afa6";
-const url = `https://api.example.com/api/kyc/${kycId}/document/${docId}/delete`;
+const url = `https://api.uatdev.gnii.ai/api/kyc/${kycId}/document/${docId}/delete`;
 
 axios
   .delete(url, {

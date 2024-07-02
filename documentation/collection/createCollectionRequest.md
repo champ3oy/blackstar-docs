@@ -54,7 +54,7 @@ This API endpoint allows the creation of a collection request for a specified cl
 ### CURL Example
 
 ```sh
-curl -X POST "https://api.example.com/api/client/{clientId}/portfolio/{portfolioId}/collectionRequest/create" \
+curl -X POST "https://api.uatdev.gnii.ai/api/client/{clientId}/portfolio/{portfolioId}/collectionRequest/create" \
 -H "Content-Type: application/json" \
 -d '{
   "amount": 0,
@@ -82,7 +82,7 @@ const data = {
 
 axios
   .post(
-    `https://api.example.com/api/client/${clientId}/portfolio/${portfolioId}/collectionRequest/create`,
+    `https://api.uatdev.gnii.ai/api/client/${clientId}/portfolio/${portfolioId}/collectionRequest/create`,
     data,
     {
       headers: {
