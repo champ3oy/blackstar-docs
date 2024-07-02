@@ -24,6 +24,7 @@
 ```
 
 - `kycStatusList` (array of strings): List of KYC statuses to filter by
+  > [ VERIFIED, REJECTED, PENDING, SUBMITTED ]
 - `kycConfigUUID` (string, UUID): UUID of the KYC configuration to filter by
 - `searchQuery` (string): Search term to filter results
 - `startDate` (string, date-time): Start date for filtering results
