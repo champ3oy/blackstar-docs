@@ -21,7 +21,7 @@ The request body should be a JSON object. While the exact structure is not provi
 
 ```json
 {
-  "refreshToken": "string"
+  "refreshToken": "eyJhbGciOiJSUzI1NiIs..."
 }
 ```
 
@@ -36,8 +36,8 @@ The response body is likely to contain a new access token and possibly a new ref
 
 ```json
 {
-  "accessToken": "string",
-  "refreshToken": "string",
+  "accessToken": "eyJhbGciOiJSAeyi1Icuwc...",
+  "refreshToken": "eyJhbGciOiJSUzI1weYow...",
   "expiresIn": 3600
 }
 ```
