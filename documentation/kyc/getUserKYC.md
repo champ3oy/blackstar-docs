@@ -1,4 +1,4 @@
-# Get UserKYC
+# Get UserKYC - Deprecated
 
 This endpoint retrieves the KYC (Know Your Customer) information for the authenticated user.
 
