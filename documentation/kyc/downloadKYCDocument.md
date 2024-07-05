@@ -1,4 +1,4 @@
-# Download KYC Document API Documentation
+# Download KYC Document
 
 ## Endpoint Overview
 

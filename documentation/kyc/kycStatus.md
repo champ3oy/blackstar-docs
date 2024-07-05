@@ -1,4 +1,4 @@
-# Check UserKYC Status API Documentation
+# Check UserKYC Status
 
 ## Endpoint Overview
 
