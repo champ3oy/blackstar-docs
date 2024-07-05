@@ -1,5 +1,7 @@
 # Blackstar API Documentations
 
+### Introduction
+
 ## Base URL
 
 - UAT : `https://api.uatdev.gnii.ai`
