@@ -34,4 +34,4 @@ Both request body data and response data are formatted as JSON. Examples are giv
 - UAT : `https://api.uatdev.gnii.ai`
 - PRODUCTION: `https://api.gnii.ai`
 
-`Note: You need your IP address whitelisted to use in PRODUCTION`
+`Note: In PRODUCTION, up to two IP addresses will be whitelisted.`
