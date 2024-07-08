@@ -7,7 +7,8 @@ Welcome to the Blackstar Developer Documentation where you'll learn how to integ
 #### API Basics
 
 > **_Before you begin!_**
-> You need to contact us to create an account for your organization that you can text the API against. We will provide you with test accounts that you can use to make API calls.
+> To get started, please contact us to create an account for your organization. We will provide you with test accounts that you can use to test and make API calls.
+
 
 The Blackstar API gives you access tp pretty much all the features you can use on our [app]() and lets you extend them for use in your application. It strives to be RESTful and is organized around the main resources you would be interacting with.
 
