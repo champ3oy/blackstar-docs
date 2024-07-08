@@ -23,7 +23,7 @@ The Blackstar API provides access to virtually all the features available on our
 
 #### Sample Requests
 
-We provide sample API calls for each endpoint using cURL and Axios. All you need to do is insert your specific parameters, and you can test the calls from your HTTP client.
+We provide sample API calls for each endpoint using cURL and Axios. Insert your specific parameters, and you can test the calls from your HTTP client.
 
 #### Request and Response
 
