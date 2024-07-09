@@ -1,19 +1,19 @@
 # Create Order Request
 
-### Description
+## Description
 
 This API takes a [Hubtel](https://hubtel.com) payment reference, in addition to the `request body` to create an order for the client.
 
 > **_Important Notice!_**
 > To use this API, please contect us for the [Hubtel](https://hubtel.com) branch API keys you need to use for payment collection.
 
-### Endpoint
+## Endpoint
 
 `POST /api/client/{clientId}/portfolio/{portfolioId}/collectionRequest/v1/create`
 
 ---
 
-### Parameters
+## Parameters
 
 | Name        | Type   | In   | Description    |
 | ----------- | ------ | ---- | -------------- |
@@ -22,7 +22,7 @@ This API takes a [Hubtel](https://hubtel.com) payment reference, in addition to 
 
 ---
 
-### Request Body
+## Request Body
 
 | Name            | Type   | Description                | Required |
 | --------------- | ------ | -------------------------- | -------- |
@@ -48,7 +48,7 @@ This API takes a [Hubtel](https://hubtel.com) payment reference, in addition to 
 
 ---
 
-### Response
+## Response
 
 | Name                  | Type   | Description                      |
 | --------------------- | ------ | -------------------------------- |
@@ -86,7 +86,7 @@ This API takes a [Hubtel](https://hubtel.com) payment reference, in addition to 
 
 ---
 
-### Example Code
+## Example Code
 
 #### CURL
 
@@ -132,7 +132,7 @@ axios
 
 ---
 
-### Notes
+## Notes
 
 - The `clientId` and `portfolioId` parameters must be valid UUIDs.
 - The `amount` should be a positive number.

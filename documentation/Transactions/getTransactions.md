@@ -1,16 +1,16 @@
 ## Get Transactions
 
-### Description
+## Description
 
 This API retrieves transactions for a specified client or portfolio.
 
-### Endpoint
+## Endpoint
 
 ```
 POST /api/client/{clientId}/transaction/search
 ```
 
-### Parameters
+## Parameters
 
 | Name          | Type    | Description               | Required | Location |
 | ------------- | ------- | ------------------------- | -------- | -------- |
@@ -135,7 +135,7 @@ The response body will be a JSON object containing the following fields:
 }
 ```
 
-### Example Code
+## Example Code
 
 #### CURL
 
