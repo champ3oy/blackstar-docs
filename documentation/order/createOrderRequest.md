@@ -6,7 +6,7 @@ This API takes a [Hubtel](https://hubtel.com) payment reference string, in addit
 
 > **_Important Notice!_**
 > To use this API, please contact us for the [Hubtel](https://hubtel.com) branch API keys you need to use for payment collection.
-> Learn how to collect payments using Hubtel APIs [here](https://developers.hubtel.com/)
+> Learn how to collect payments using [Hubtel APIs Documentation](https://developers.hubtel.com/)
 
 ## Endpoint
 
