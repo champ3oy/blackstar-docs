@@ -39,11 +39,11 @@ This API takes a [Hubtel](https://hubtel.com) payment reference string, in addit
 ```json
 {
   "amount": 1000,
-  "successUrl": "https://example.com/success",
-  "failUrl": "https://example.com/failure",
   "securityId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "clientReference": "order123",
   "orderOfferId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-  "clientReference": "order123"
+  "successUrl": "https://example.com/success",
+  "failUrl": "https://example.com/failure"
 }
 ```
 
