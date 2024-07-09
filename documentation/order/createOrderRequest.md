@@ -27,11 +27,11 @@ This API takes a [Hubtel](https://hubtel.com) payment reference, in addition to 
 | Name            | Type   | Description                | Required |
 | --------------- | ------ | -------------------------- | -------- |
 | amount          | number | The amount to be collected | Yes      |
+| securityId      | string | Security UUID              | Yes      |
+| clientReference | string | Hubtel reference string    | Yes      |
 | successUrl      | string | URL to redirect on success | No       |
 | failUrl         | string | URL to redirect on failure | No       |
-| securityId      | string | Security UUID              | Yes      |
 | orderOfferId    | string | Order offer UUID           | No       |
-| clientReference | string | Hubtel reference string    | Yes      |
 
 #### Example Request Body
 
