@@ -2,14 +2,15 @@
 
 ## Description
 
-This API takes a [Hubtel](https://hubtel.com) payment reference, in addition to the `request body` to create an order for the client.
+This API takes a [Hubtel](https://hubtel.com) payment reference string, in addition to the `request body` to create an order for the client.
 
 > **_Important Notice!_**
-> To use this API, please contect us for the [Hubtel](https://hubtel.com) branch API keys you need to use for payment collection.
+> To use this API, please contact us for the [Hubtel](https://hubtel.com) branch API keys you need to use for payment collection.
+> Learn how to collect payments using Hubtel APIs [here](https://developers.hubtel.com/)
 
 ## Endpoint
 
-`POST /api/client/{clientId}/portfolio/{portfolioId}/collectionRequest/v1/create`
+`POST`: `/api/client/{clientId}/portfolio/{portfolioId}/collectionRequest/v1/create`
 
 ---
 
@@ -90,7 +91,7 @@ This API takes a [Hubtel](https://hubtel.com) payment reference, in addition to 
 
 #### CURL
 
-```sh
+```bash
 curl -X POST "https://api.example.com/api/client/3fa85f64-5717-4562-b3fc-2c963f66afa6/portfolio/3fa85f64-5717-4562-b3fc-2c963f66afa6/collectionRequest/v1/create" \
 -H "Content-Type: application/json" \
 -d '{
