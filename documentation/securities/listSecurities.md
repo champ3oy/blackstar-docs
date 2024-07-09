@@ -1,27 +1,27 @@
 # List Available Securities
 
-### Description
+## Description
 
 This API endpoint retrieves available securities/products based on specified search criteria.
 
-### Endpoint
+## Endpoint
 
 - **URL:** `/api/product/search`
 - **Method:** POST
 - **Description:** Get available securities/products.
 
-### Parameters
+## Parameters
 
 | Name | Type    | In    | Required | Description               |
 | ---- | ------- | ----- | -------- | ------------------------- |
 | page | integer | query | Yes      | Current page number.      |
 | size | integer | query | Yes      | Maximum records per page. |
 
-### Request Body
+## Request Body
 
 The request body must be in JSON format.
 
-#### Schema
+### Schema
 
 | Field                       | Type    | Required | Description                                |
 | --------------------------- | ------- | -------- | ------------------------------------------ |
@@ -38,7 +38,7 @@ The request body must be in JSON format.
 | isArchived                  | boolean | No       | Filter by archived status.                 |
 | bondBillSectorList          | array   | No       | List of bond bill sectors to filter by.    |
 
-#### Example Request Body
+### Example Request Body
 
 ```json
 {
@@ -57,9 +57,9 @@ The request body must be in JSON format.
 }
 ```
 
-### Response
+## Response
 
-#### Response Body
+### Response Body
 
 The response body will be in JSON format.
 
@@ -107,7 +107,7 @@ The response body will be in JSON format.
 | content.dayCountBasis         | string  | Day count basis.                         |
 | content.couponDateBasis       | string  | Coupon date basis.                       |
 
-#### Example Response Body
+### Example Response Body
 
 ```json
 {
@@ -166,7 +166,7 @@ The response body will be in JSON format.
 }
 ```
 
-### Example Code
+## Example Code
 
 #### cURL
 
