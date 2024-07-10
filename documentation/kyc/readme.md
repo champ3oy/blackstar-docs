@@ -2,7 +2,7 @@
 
 APIs for completing KYC for users
 
-### Request Flow
+#### Request Flow
 
 Use this flow to get an idea of how the KYC flow works
 
