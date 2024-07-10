@@ -2,7 +2,7 @@
 
 ### Endpoint
 
-`POST https://api.uatdev.gnii.ai/swagger-ui/index.html#/Performance/performanceChart`
+`POST https://api.uatdev.blackstargroup.ai/swagger-ui/index.html#/Performance/performanceChart`
 
 ### Description
 

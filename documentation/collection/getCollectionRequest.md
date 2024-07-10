@@ -114,7 +114,7 @@ POST /api/client/{clientId}/collectionRequest/search
 #### CURL
 
 ```sh
-curl -X POST "https://api.uatdev.gnii.ai/api/client/3fa85f64-5717-4562-b3fc-2c963f66afa6/collectionRequest/search?page=0&size=10" \
+curl -X POST "https://api.uatdev.blackstargroup.ai/api/client/3fa85f64-5717-4562-b3fc-2c963f66afa6/collectionRequest/search?page=0&size=10" \
 -H "Content-Type: application/json" \
 -d '{
   "startDate": "2024-07-02T10:40:06.799Z",
@@ -142,7 +142,7 @@ const data = {
 
 axios
   .post(
-    "https://api.uatdev.gnii.ai/api/client/3fa85f64-5717-4562-b3fc-2c963f66afa6/collectionRequest/search?page=0&size=10",
+    "https://api.uatdev.blackstargroup.ai/api/client/3fa85f64-5717-4562-b3fc-2c963f66afa6/collectionRequest/search?page=0&size=10",
     data,
     {
       headers: {

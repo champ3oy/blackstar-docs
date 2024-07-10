@@ -34,7 +34,9 @@ Use this flow to get an idea of how the KYC flow works
 
 4. #### Delete File
 
-   Use this API to delete an uploaded file. >[see documentation](https://blackstargroup.ai/developers?folder=kyc&page=deleteKYCDocument)
+   Use this API to delete an uploaded file.
+
+   > [see documentation](https://blackstargroup.ai/developers?folder=kyc&page=deleteKYCDocument)
 
 5. #### Submit KYC Form
 
@@ -43,4 +45,5 @@ Use this flow to get an idea of how the KYC flow works
    > [see documentation](https://blackstargroup.ai/developers?folder=kyc&page=submit)
 
 6. #### Check KYC Verification Status
-   This API takes a KYC ID and returns the verification status. >[see documentation](https://blackstargroup.ai/developers?folder=kyc&page=kycStatus)
+   This API takes a KYC ID and returns the verification status.
+   > [see documentation](https://blackstargroup.ai/developers?folder=kyc&page=kycStatus)

@@ -1,4 +1,4 @@
-# Get KYC Answers API Documentation
+# Get KYC Answers
 
 ## Endpoint Overview
 
@@ -80,7 +80,7 @@ The response is an array of objects, each representing an answer to a KYC questi
 ### cURL
 
 ```bash
-curl -X GET "https://api.uatdev.gnii.ai/api/kyc/3fa85f64-5717-4562-b3fc-2c963f66afa6/SS1/answer/get"
+curl -X GET "https://api.uatdev.blackstargroup.ai/api/kyc/3fa85f64-5717-4562-b3fc-2c963f66afa6/SS1/answer/get"
 ```
 
 ### JavaScript (Axios)
@@ -93,7 +93,7 @@ const subSectionIdentifier = "SS1";
 
 axios
   .get(
-    `https://api.uatdev.gnii.ai/api/kyc/${kycId}/${subSectionIdentifier}/answer/get`
+    `https://api.uatdev.blackstargroup.ai/api/kyc/${kycId}/${subSectionIdentifier}/answer/get`
   )
   .then((response) => {
     console.log(response.data);

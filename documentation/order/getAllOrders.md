@@ -147,7 +147,7 @@ This API endpoint retrieves a list of orders for a specific client or portfolio.
 ### CURL
 
 ```sh
-curl -X POST "https://api.uatdev.gnii.ai/api/client/{clientId}/order/search?page=1&size=10" \
+curl -X POST "https://api.uatdev.blackstargroup.ai/api/client/{clientId}/order/search?page=1&size=10" \
 -H "Content-Type: application/json" \
 -d '{
   "assetClassList": ["BILL"],
@@ -183,7 +183,7 @@ const data = {
 
 axios
   .post(
-    `https://api.uatdev.gnii.ai/api/client/${clientId}/order/search?page=${page}&size=${size}`,
+    `https://api.uatdev.blackstargroup.ai/api/client/${clientId}/order/search?page=${page}&size=${size}`,
     data,
     {
       headers: {

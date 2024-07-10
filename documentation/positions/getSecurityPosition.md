@@ -42,7 +42,7 @@ For a full list of fields, refer to the example response below.
 ### CURL:
 
 ```bash
-curl -X POST "https://api.uatdev.gnii.ai/api/client/123e4567-e89b-12d3-a456-426614174000/product/98765432-e89b-12d3-a456-426614174000/position?portfolioId=abcdef12-e89b-12d3-a456-426614174000&date=13-01-2020" \
+curl -X POST "https://api.uatdev.blackstargroup.ai/api/client/123e4567-e89b-12d3-a456-426614174000/product/98765432-e89b-12d3-a456-426614174000/position?portfolioId=abcdef12-e89b-12d3-a456-426614174000&date=13-01-2020" \
      -H "Accept: application/json" \
      -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
 ```
@@ -54,7 +54,7 @@ const axios = require("axios");
 
 axios
   .post(
-    "https://api.uatdev.gnii.ai/api/client/123e4567-e89b-12d3-a456-426614174000/product/98765432-e89b-12d3-a456-426614174000/position",
+    "https://api.uatdev.blackstargroup.ai/api/client/123e4567-e89b-12d3-a456-426614174000/product/98765432-e89b-12d3-a456-426614174000/position",
     null,
     {
       params: {

@@ -1,4 +1,4 @@
-# Authentication
+# Authentication Overview
 
 Contact Blackstar for an account to be created for you. The account can be used in both PRODUCTION and UAT environments.
 

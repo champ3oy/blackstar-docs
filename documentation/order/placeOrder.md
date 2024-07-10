@@ -171,7 +171,7 @@ In case of an error, the response will include:
 ### cURL
 
 ```bash
-curl -X POST "https://api.uatdev.gnii.ai/api/client/123e4567-e89b-12d3-a456-426614174000/portfolio/98765432-e89b-12d3-a456-426614174000/order/place" \
+curl -X POST "https://api.uatdev.blackstargroup.ai/api/client/123e4567-e89b-12d3-a456-426614174000/portfolio/98765432-e89b-12d3-a456-426614174000/order/place" \
      -H "Content-Type: application/json" \
      -d '{
   "securityUUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -210,7 +210,7 @@ const orderData = {
 
 axios
   .post(
-    `https://api.uatdev.gnii.ai/api/client/${clientId}/portfolio/${portfolioId}/order/place`,
+    `https://api.uatdev.blackstargroup.ai/api/client/${clientId}/portfolio/${portfolioId}/order/place`,
     orderData,
     {
       headers: {

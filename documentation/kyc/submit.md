@@ -116,7 +116,7 @@ import requests
 import uuid
 
 # Replace with your API base URL
-base_url = "https://api.uatdev.gnii.ai"
+base_url = "https://api.uatdev.blackstargroup.ai"
 
 # Replace with an actual KYC ID
 kyc_id = str(uuid.uuid4())

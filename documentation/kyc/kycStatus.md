@@ -121,7 +121,7 @@ No specific headers are required for this endpoint.
 ### cURL
 
 ```bash
-curl -X GET "https://api.uatdev.gnii.ai/api/kyc/3fa85f64-5717-4562-b3fc-2c963f66afa6/status/check"
+curl -X GET "https://api.uatdev.blackstargroup.ai/api/kyc/3fa85f64-5717-4562-b3fc-2c963f66afa6/status/check"
 ```
 
 ### JavaScript (Axios)
@@ -132,7 +132,7 @@ const axios = require("axios");
 const userKYCID = "3fa85f64-5717-4562-b3fc-2c963f66afa6";
 
 axios
-  .get(`https://api.uatdev.gnii.ai/api/kyc/${userKYCID}/status/check`)
+  .get(`https://api.uatdev.blackstargroup.ai/api/kyc/${userKYCID}/status/check`)
   .then((response) => {
     console.log(response.data);
   })

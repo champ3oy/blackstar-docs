@@ -29,20 +29,20 @@ This endpoint allows users to authenticate and log in to the system.
 - **Code**: 200 OK
 - **Content-Type**: application/json
 
-
 ### Body
+
 ```json
 {
-    "userId": "83d93f37-e143-4168-b833-8dbf238bc546",
-    "email": "test@blackstargroup.ai",
-    "firstName": "Jane",
-    "lastName": "Doe",
-    "pinEnabled": false,
-    "accessToken": "eyJhbGciOiJSUzI1NiIs...",
-    "refreshToken": "eyJhbGciOiJIUzI1NiC...",
-    "clientId": "910c8839-XXXX-XXXX-XXXX-26eed7adc026",
-    "clientCode": "JWXXXXXX",
-    "hasPortfolios": true
+  "userId": "83d93f37-e143-4168-b833-8dbf238bc546",
+  "email": "test@blackstargroup.ai",
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "pinEnabled": false,
+  "accessToken": "eyJhbGciOiJSUzI1NiIs...",
+  "refreshToken": "eyJhbGciOiJIUzI1NiC...",
+  "clientId": "910c8839-XXXX-XXXX-XXXX-26eed7adc026",
+  "clientCode": "JWXXXXXX",
+  "hasPortfolios": true
 }
 ```
 
@@ -51,7 +51,7 @@ This endpoint allows users to authenticate and log in to the system.
 ### cURL
 
 ```bash
-curl -X POST "https://api.uatdev.gnii.ai/api/public/user/authenticate" \
+curl -X POST "https://api.uatdev.blackstargroup.ai/api/public/user/authenticate" \
      -H "Content-Type: application/json" \
      -H "Accept: application/json" \
      -d '{
@@ -65,7 +65,7 @@ curl -X POST "https://api.uatdev.gnii.ai/api/public/user/authenticate" \
 ```javascript
 const axios = require("axios");
 
-const url = "https://api.uatdev.gnii.ai/api/public/user/authenticate";
+const url = "https://api.uatdev.blackstargroup.ai/api/public/user/authenticate";
 const data = {
   email: "your_email",
   password: "your_password",

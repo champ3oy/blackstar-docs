@@ -43,7 +43,7 @@ This endpoint allows users to refresh their access token, typically used to exte
 ### cURL
 
 ```bash
-curl -X POST "https://api.uatdev.gnii.ai/api/public/user/refresh-token" \
+curl -X POST "https://api.uatdev.blackstargroup.ai/api/public/user/refresh-token" \
      -H "Content-Type: application/json" \
      -H "Accept: application/json" \
      -d '{
@@ -56,7 +56,8 @@ curl -X POST "https://api.uatdev.gnii.ai/api/public/user/refresh-token" \
 ```javascript
 const axios = require("axios");
 
-const url = "https://api.uatdev.gnii.ai/api/public/user/refresh-token";
+const url =
+  "https://api.uatdev.blackstargroup.ai/api/public/user/refresh-token";
 const data = {
   refreshToken: "your_current_refresh_token",
 };

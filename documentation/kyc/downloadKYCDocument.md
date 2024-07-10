@@ -35,7 +35,7 @@ The response body will contain the binary data of the requested document.
 ### cURL
 
 ```bash
-curl -X GET "https://api.uatdev.gnii.ai/api/kyc/3fa85f64-5717-4562-b3fc-2c963f66afa6/document/4fa85f64-5717-4562-b3fc-2c963f66afa7/download" --output document.pdf
+curl -X GET "https://api.uatdev.blackstargroup.ai/api/kyc/3fa85f64-5717-4562-b3fc-2c963f66afa6/document/4fa85f64-5717-4562-b3fc-2c963f66afa7/download" --output document.pdf
 ```
 
 ### JavaScript (Axios)
@@ -49,7 +49,7 @@ const docId = "4fa85f64-5717-4562-b3fc-2c963f66afa7";
 
 axios({
   method: "get",
-  url: `https://api.uatdev.gnii.ai/api/kyc/${kycId}/document/${docId}/download`,
+  url: `https://api.uatdev.blackstargroup.ai/api/kyc/${kycId}/document/${docId}/download`,
   responseType: "stream",
 })
   .then((response) => {

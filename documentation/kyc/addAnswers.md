@@ -101,7 +101,7 @@
 ### cURL
 
 ```bash
-curl -X POST "https://api.uatdev.gnii.ai/api/kyc/add" \
+curl -X POST "https://api.uatdev.blackstargroup.ai/api/kyc/add" \
      -H "Content-Type: application/json" \
      -d '{
   "email": "user@example.com",
@@ -132,7 +132,7 @@ const data = {
 };
 
 axios
-  .post("https://api.uatdev.gnii.ai/api/kyc/add", data, {
+  .post("https://api.uatdev.blackstargroup.ai/api/kyc/add", data, {
     headers: {
       "Content-Type": "application/json",
     },

@@ -13,6 +13,6 @@ Pass access token to the Header of the request
 
 ```json
 "headers": {
-    "Authorization": "Bearer <ACCESS_TOKEN>
+    "Authorization": "Bearer <ACCESS_TOKEN>"
 }
 ```

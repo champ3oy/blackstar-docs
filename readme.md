@@ -1,16 +1,15 @@
 # Blackstar API Documentations
 
-### Introduction
+#### Introduction
 
-Welcome to the Blackstar Developer Documentation where you'll learn how to integrate our Investment products with Blackstar APIs.
+Welcome to the Blackstar Developer Documentation where you'll learn how to integrate our Investment products with the Blackstar APIs.
 
 #### API Basics
 
 > **_Before you begin!_**
 > To get started, please contact us to create an account for your organization. We will provide you with test accounts that you can use to test and make API calls.
 
-
-The Blackstar API provides access to virtually all the features available on our [app](), allowing you to integrate and extend them within your own application. Designed to be RESTful, the API is organized around the primary resources you'll interact with.
+The Blackstar API provides access to virtually all the features available on our [app](https://linktr.ee/tech.blackstargroup), allowing you to integrate and extend them within your own application. Designed to be RESTful, the API is organized around the primary resources you'll interact with.
 
 ##### HTTP Methods
 
@@ -31,7 +30,7 @@ Both request body data and response data are formatted as JSON. Examples are giv
 
 #### Base URL
 
-- UAT : `https://api.uatdev.gnii.ai`
-- PRODUCTION: `https://api.gnii.ai`
+- UAT : `https://api.uatdev.blackstargroup.ai`
+- PRODUCTION: `https://api.blackstargroup.ai`
 
 `Note: In PRODUCTION, up to two IP addresses will be whitelisted.`

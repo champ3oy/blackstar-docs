@@ -59,7 +59,7 @@ Creates a withdrawal request for a specified client and portfolio.
 ##### CURL
 
 ```bash
-curl -X POST "https://api.uatdev.gnii.ai/api/client/{clientId}/portfolio/{portfolioId}/withdrawalRequest/create" \
+curl -X POST "https://api.uatdev.blackstargroup.ai/api/client/{clientId}/portfolio/{portfolioId}/withdrawalRequest/create" \
 -H "Content-Type: application/json" \
 -d '{
   "amount": 0,
@@ -76,7 +76,7 @@ const axios = require("axios");
 
 axios
   .post(
-    "https://api.uatdev.gnii.ai/api/client/{clientId}/portfolio/{portfolioId}/withdrawalRequest/create",
+    "https://api.uatdev.blackstargroup.ai/api/client/{clientId}/portfolio/{portfolioId}/withdrawalRequest/create",
     {
       amount: 0,
       accountId: "3fa85f64-5717-4562-b3fc-2c963f66afa6",

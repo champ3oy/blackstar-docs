@@ -48,6 +48,7 @@ The response body contains a JSON object with the following structure:
 - `currentSectionIdentifier` (string): Identifier of the current section in the KYC process
 
 ### Response Body
+
 ```json
 {
   "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -66,9 +67,7 @@ The response body contains a JSON object with the following structure:
       "subSectionIdentifier": "string",
       "subSectionName": "string",
       "questionType": "DATE",
-      "multipleChoiceAnswer": [
-        "string"
-      ]
+      "multipleChoiceAnswer": ["string"]
     }
   ],
   "kycFormDTO": {
@@ -135,7 +134,7 @@ The response body contains a JSON object with the following structure:
 ### cURL
 
 ```bash
-curl -X GET "https://api.uatdev.gnii.ai/api/kyc/get" \
+curl -X GET "https://api.uatdev.blackstargroup.ai/api/kyc/get" \
      -H "Accept: application/json" \
      -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
 ```
@@ -145,7 +144,7 @@ curl -X GET "https://api.uatdev.gnii.ai/api/kyc/get" \
 ```javascript
 const axios = require("axios");
 
-const url = "https://api.uatdev.gnii.ai/api/kyc/get";
+const url = "https://api.uatdev.blackstargroup.ai/api/kyc/get";
 
 axios
   .get(url, {
