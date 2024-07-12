@@ -50,7 +50,9 @@ const docId = "4fa85f64-5717-4562-b3fc-2c963f66afa7";
 axios({
   method: "get",
   url: `https://api.uatdev.blackstargroup.ai/api/kyc/${kycId}/document/${docId}/download`,
-  responseType: "stream",
+  responseType: 'blob',
+  getResponse: true,
+  header: { Accept: 'application/octet-stream' },
 })
   .then((response) => {
     response.data.pipe(fs.createWriteStream("document.pdf"));
