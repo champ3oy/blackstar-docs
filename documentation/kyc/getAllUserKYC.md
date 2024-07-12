@@ -16,7 +16,6 @@
 ```json
 {
   "kycStatusList": ["VERIFIED"],
-  "kycConfigUUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
   "searchQuery": "string",
   "startDate": "2024-06-28T13:21:56.556Z",
   "endDate": "2024-06-28T13:21:56.556Z"
@@ -25,8 +24,7 @@
 
 - `kycStatusList` (array of strings): List of KYC statuses to filter by
   > [ VERIFIED, REJECTED, PENDING, SUBMITTED ]
-- `kycConfigUUID` (string, UUID): UUID of the KYC configuration to filter by
-- `searchQuery` (string): Search term to filter results
+- `searchQuery` (string): Search term to filter results based on email
 - `startDate` (string, date-time): Start date for filtering results
 - `endDate` (string, date-time): End date for filtering results
 
