@@ -1,4 +1,4 @@
-# Check Status of Payment
+# Check Status of Payment (Deprecated)
 
 Checks the status of a payment request.
 

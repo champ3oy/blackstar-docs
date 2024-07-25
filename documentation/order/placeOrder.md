@@ -3,7 +3,7 @@
 ## Endpoint
 
 ```
-POST /api/client/{clientId}/portfolio/{portfolioId}/order/place
+POST /api/client/{clientId}/portfolio/{portfolioId}/order/v1/place
 ```
 
 ## Description
@@ -26,7 +26,7 @@ Content-Type: application/json
 | securityUUID                   | string (UUID) | Yes      | Unique identifier of the security                           |
 | orderSide                      | string        | Yes      | Side of the order (e.g., "BUY" or "SELL")                   |
 | orderType                      | string        | Yes      | Type of order (e.g., "MARKET" or "LIMIT")                   |
-| quantity                       | number        | Yes      | Quantity of securities to order                             |
+| quantity                       | number        | No       | Quantity of securities to order                             |
 | price                          | number        | No       | Price per security (required for limit orders)              |
 | yield                          | number        | No       | Yield of the security                                       |
 | considerationWithCurrency      | number        | No       | Consideration amount including currency                     |
@@ -40,7 +40,7 @@ Content-Type: application/json
 | consideration                  | number        | No       | Consideration amount                                        |
 | totalConsideration             | number        | No       | Total consideration amount                                  |
 | currency                       | string        | No       | Currency code                                               |
-| buyAllOrSellAll                | boolean       | No       | Flag to buy or sell all                                     |
+| clientReference                | string        | No       | Client's payment reference                                  |
 
 ## Response
 
@@ -152,6 +152,7 @@ Key fields in the response:
   "counterPartyAlias": "string",
   "orderDate": "2024-07-02T10:20:56.211Z",
   "managedSecurity": true,
+  "clientReference": "string",
   "securityName": "string",
   "companyNameOrIssuer": "string",
   "cancellable": true
