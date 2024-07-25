@@ -10,7 +10,8 @@ POST /api/client/{clientId}/order/{id}/cancel
 
 ## Description
 
-Cancels a specific order for a given client.
+Cancels a specific order for a given client. 
+This API will only work on orders with `cancellable` field `true`.
 
 ## Parameters
 
