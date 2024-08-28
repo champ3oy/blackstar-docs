@@ -9,7 +9,7 @@ Welcome to the Blackstar Developer Documentation where you'll learn how to integ
 > **_Before you begin!_**
 > To get started, please contact us to create an account for your organization. We will provide you with test accounts that you can use to test and make API calls.
 
-The Blackstar API provides access to Blackstar investment products, allowing you to integrate and extend them within your own application. Designed to be RESTful, the API is organized around the primary resources you'll interact with.
+The Blackstar API provides access to virtually all the features available on our app, allowing you to integrate and extend them within your own application. Designed to be RESTful, the API is organized around the primary resources you'll interact with.
 
 ##### HTTP Methods
 

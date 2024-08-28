@@ -1,4 +1,4 @@
-# Get Positions based on different asset classes
+# Get Positions On All Portfolios
 
 ### Endpoint
 
@@ -147,7 +147,27 @@ axios
     "marketPrice": 99.85,
     "marketYield": 0.015,
     "profitLoss": -1500,
-    "profitLossRatio": -0.0015
+    "profitLossRatio": -0.0015,
+ "children": [{
+      "marketOrCurrentValue": "string",
+      "capitalProfitLossWithCurrency": "string",
+      "capitalProfitLossWithCurrencyPercentage": "string"
+      "difference": {
+          "capitalProfitLossWithCurrency": "string"
+      },
+    }],
+
+"error": true,
+    "errorMessage": {
+      "additionalProp1": "string",
+      "additionalProp2": "string",
+      "additionalProp3": "string"
+    },
+    "errorRawString": {
+      "additionalProp1": "string",
+      "additionalProp2": "string",
+      "additionalProp3": "string"
+    },
   }
 ]
 ```

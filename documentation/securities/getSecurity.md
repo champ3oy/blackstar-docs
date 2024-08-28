@@ -1,4 +1,4 @@
-# Get Particular Security
+# Get Fund Particular
 
 This API endpoint retrieves specific details about a security/product associated with a given security ID.
 
@@ -28,9 +28,8 @@ The response will be a JSON object containing the particulars of the fund. The s
 
 ```json
 {
-  "additionalProp1": {},
-  "additionalProp2": {},
-  "additionalProp3": {}
+   "data" : base 64 encoded bytes,
+   "meta" : { "filename" : name of file}
 }
 ```
 
@@ -64,9 +63,8 @@ axios
 
 ```json
 {
-  "additionalProp1": {},
-  "additionalProp2": {},
-  "additionalProp3": {}
+   "data" : base 64 encoded bytes,
+   "meta" : { "filename" : name of file}
 }
 ```
 

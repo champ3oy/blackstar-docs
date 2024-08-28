@@ -33,8 +33,7 @@ This endpoint allows users to refresh their access token, typically used to exte
 ```json
 {
   "accessToken": "eyJhbGciOiJSAeyi1Icuwc...",
-  "refreshToken": "eyJhbGciOiJSUzI1weYow...",
-  "expiresIn": 3600
+  "refreshToken": "eyJhbGciOiJSUzI1weYow..."
 }
 ```
 

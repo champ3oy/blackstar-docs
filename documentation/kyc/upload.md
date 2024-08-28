@@ -43,18 +43,19 @@ Uploads a file for a Know Your Customer (KYC) application.
 }
 ```
 
-The response contains key-value pairs where the key is the filename or a property name, and the value is the UUID of the uploaded file.
+The response contains key-value pairs where the key is the filename or a property name, and the value is the document ID of the uploaded file.
 
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X POST "https://api.uatdev.blackstargroup.ai/api/kyc/123e4567-e89b-12d3-a456-426614174000/upload" \
-     -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
-     -H "Content-Type: multipart/form-data" \
-     -F "files=@/path/to/document1.pdf" \
-     -F "files=@/path/to/document2.jpg"
+curl --location 'http://localhost:9090/api/kyc/e335f9dd-aea6-4c80-807f-4c5708a1df6f/upload' \
+--header 'Authorization: Bearer Token' \
+--form 'files[0].identifier="7629a60fb47145aab44d84cc37f4023a"' \
+--form 'files[0].file=@"/C:/Users/Downloads/Client performance.png"' \
+--form 'files[1].identifier="cbced6cbac4643bd80b6b73efe0ba615"' \
+--form 'files[1].file=@"/C:/Users/Downloads/Relationship Manager.png"'
 ```
 
 ### JavaScript (Axios)

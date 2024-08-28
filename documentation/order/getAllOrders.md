@@ -77,6 +77,7 @@ This API endpoint retrieves a list of orders for a specific client or portfolio.
 | content[].country                 | object  | Country details                  |
 | content[].description             | string  | Description                      |
 | content[].fractionalQuantityAllow | boolean | Fractional quantity allowed      |
+| content[].cancellable | boolean |If Order can be cancelled      |
 
 ### Example Response Body
 
@@ -137,6 +138,7 @@ This API endpoint retrieves a list of orders for a specific client or portfolio.
       },
       "description": "string",
       "fractionalQuantityAllow": true
+      "cancellable:" true
     }
   ]
 }
