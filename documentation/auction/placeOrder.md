@@ -24,14 +24,10 @@ Content-Type: application/json
 | Field                          | Type          | Required | Description                                                 |
 | ------------------------------ | ------------- | -------- | ----------------------------------------------------------- |
 | securityUUID                   | string (UUID) | Yes      | Unique identifier of the security                           |
-| orderSide                      | string        | Yes      | Side of the order (e.g., "BUY")                   |
-| orderType                      | string        | Yes      | Type of order (e.g., "MARKET")                   |
-| quantity                       | number        | Yes      | Quantity of securities to order                             |
+| orderSide                      | string        | Yes      | Side of the order (should always be "BUY")                   |
 | yield                          | number        | No       | Yield of the security                                       |
-| considerationWithCurrency      | number        | No       | Consideration amount including currency                     |
-| settlementType                 | string        | No       | Type of settlement (e.g., "T0")               |
-| orderValidity                  | string        | No       | Validity of the order (e.g., "GTC" for Good Till Cancelled) |
-| orderOfferId                   | string (UUID) | No       | Tender ID                        |
+| consideration      | number        | No       | Consideration amount                    |
+| orderOfferId                   | string (UUID) | No       | ID from the order offer request                        |
 | primaryAuctionType             | string        | No       | Type of primary auction (e.g., "COMPETITIVE")               |
 
 ## Response
@@ -168,13 +164,10 @@ curl -X POST "https://api.uatdev.blackstargroup.ai/api/client/123e4567-e89b-12d3
      -d '{
   "securityUUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
   "orderSide": "BUY",
-  "orderType": "MARKET",
   "quantity": 100,
   "price": 50.25,
   "yield": 2.5,
-  "considerationWithCurrency": 5025,
-  "settlementType": "T0",
-  "orderValidity": "GTC"
+  "consideration": 5025,
   "orderOfferId": "3fa85f64-5717-4562-b3fc-2c963f66a1234"
 }'
 ```
@@ -190,13 +183,10 @@ const portfolioId = "98765432-e89b-12d3-a456-426614174000";
 const orderData = {
   securityUUID: "3fa85f64-5717-4562-b3fc-2c963f66afa6",
   orderSide: "BUY",
-  orderType: "MARKET",
   quantity: 100,
   price: 50.25,
   yield: 2.5,
-  considerationWithCurrency: 5025,
-  settlementType: "T0",
-  orderValidity: "GTC",
+  consideration: 5025,
   orderOfferId: "3fa85f64-5717-4562-b3fc-2c963f66a1234"
 };
 

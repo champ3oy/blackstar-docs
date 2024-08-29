@@ -34,7 +34,24 @@ The `List Order Offer` API retrieves a list of available tenders for auction
 }
 ```
 
-## Example Response
+## Response
+
+| Column Name                                   | Data Type      | Description                                                        |
+|-----------------------------------------------|----------------|--------------------------------------------------------------------|
+| `securityUUID`                                | string         | Security identifier for the security                   |
+| `description`                                 | string         | A description of the security                                      |
+| `logoPath`                                    | string | Path to the logo of the security                                   |
+| `id`                                          | string         | Unique identifier for the security                          |
+| `orderSide`                                   | string  | Side of the order, "BUY" or "SELL                          |
+| `currency`                                    | string  | Currency code, "GHS"                                         |
+| `securityName`                                | string | Name of the security                                               |
+| `minOrderAmount`                              | integer | Minimum order amount for non competitive bids                                               |
+| `minOrderAmountForCompetitivePrimaryAuction`  | integer | Minimum order amount for competitive bids               |
+| `minYield`                                    | integer | Minimum yield                                       |
+| `maxYield`                                    | integer | Maximum yield                                       |
+| `prevYield`                                   | integer | Previous yield value                                              |
+| `primaryAuctionType`                          | string  | Type of the primary auction, "BOTH", "COMPETITIVE", "NON_COMPETITIVE".     |
+
 
 ### JSON Response Body
 
@@ -46,55 +63,18 @@ The `List Order Offer` API retrieves a list of available tenders for auction
   "content": [
     {
       "securityUUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-      "isin": "string",
-      "name": "string",
-      "securityId": "string",
-      "bsSecuritySmallId": "string",
-      "bsSecurityMediumId": "string",
-      "assetClass": "BILL",
-      "issuer": "string",
-      "securityType": "string",
-      "sector": "string",
-      "maturityDate": "2024-07-05T12:00:19.419Z",
-      "issueDate": "2024-07-05T12:00:19.419Z",
-      "securityCurrency": {
-        "code": "string",
-        "name": "string",
-        "symbol": "string",
-        "logoKey": "string"
-      },
-      "targetCurrency": {
-        "code": "string",
-        "name": "string",
-        "symbol": "string"
-      },
       "description": "string",
-    "logoPath": "country-logo/44d87774-b3a7-4b78-869c-415e3c1bbb0a",
-    "tendorNo": "1918",
-    "id": "6d64867d-5cfd-45b1-829a-a510b12396aaa",
-    "offerStartDate": "26-08-2024",
-    "offerEndDate": "30-08-2024",
-    "source": "BSB",
-    "quantity": null,
-    "orderSide": "BUY",
-    "orderOfferType": "PRIMARY_AUCTION",
-    "currency": null,
-    "tenor": "182",
-    "orderOfferStartTime": null,
-    "orderOfferEndTime": "11:00",
-    "securityName": "182 Day GHS T-bill",
-    "companyNameOrIssuer": "Treasury Bill",
-    "unitPriceOrYield": null,
-    "unitPriceOrYieldChange": null,
-    "unitPriceOrYieldChangePercentage": null,
-    "minOrderAmount": "100",
-    "minOrderAmountForCompetitivePrimaryAuction": "500000",
-    "minYield": null,
-    "maxYield": null,
-    "minDiscountRate": null,
-    "maxDiscountRate": null,
-    "prevYield": "26.6854",
-    "primaryAuctionType": "BOTH"
+      "logoPath": "country-logo/44d87774-b3a7-4b78-869c-415e3c1bbb0a",
+      "id": "6d64867d-5cfd-45b1-829a-a510b12396aaa",
+      "orderSide": "BUY",
+      "currency": "GHS",
+      "securityName": "182 Day GHS T-bill",
+      "minOrderAmount": "100",
+      "minOrderAmountForCompetitivePrimaryAuction": "500000",
+      "minYield": null,
+      "maxYield": null,
+      "prevYield": "26.6854",
+      "primaryAuctionType": "COMPETITIVE"
     }
   ]
 }
@@ -146,4 +126,3 @@ axios
 - The `clientId` is a required path parameter and must be provided in the URL.
 - The request body must be in JSON format.
 - The `page` and `size` query parameters are required to handle pagination.
-- The `sort` query parameter is optional and can be used to specify the sort order.
