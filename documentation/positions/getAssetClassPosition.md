@@ -123,53 +123,76 @@ axios
 ```json
 [
   {
-    "securityUUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-    "isin": "US912796XA78",
-    "name": "US Treasury Bill",
-    "securityId": "T-BILL-3M",
-    "assetClass": "BILL",
-    "securityType": "Treasury Bill",
-    "sector": "Government",
-    "maturityDate": "2025-12-31T00:00:00Z",
-    "issueDate": "2020-01-01T00:00:00Z",
+    "securityUUID": "c3bf3210-a24e-4c7b-a530-4b402504f526",
+    "isin": "US5949181045",
+    "name": "Microsoft Corporation",
+    "securityId": "US.NASDAQ/MSFT",
+    "bsSecuritySmallId": null,
+    "bsSecurityMediumId": "US.NASDAQ/MSFT",
+    "assetClass": "EQUITY",
+    "fundManager": null,
+    "fundHouse": null,
+    "symbol": "MSFT",
+    "companyName": "Microsoft Corporation",
+    "issuer": null,
+    "securityType": "Ordinary",
+    "sector": "Technology",
+    "maturityDate": null,
+    "issueDate": "13-03-1986",
     "securityCurrency": {
       "code": "USD",
       "name": "US Dollar",
-      "symbol": "$"
+      "symbol": "$",
+      "logoKey": "32088395-d294-4a67-89bd-39920bab0385"
     },
-    "country": {
-      "code": "US",
-      "name": "United States"
+    "targetCurrency": null,
+    "issuePrice": null,
+    "securityMarket": "NASDAQ",
+    "returnRate": null,
+    "repoType": null,
+    "fractionalQuantityAllow": true,
+    "logoPath": "security-logo/c3bf3210-a24e-4c7b-a530-4b402504f526",
+    "portfolioUUID": "8a208c43-a6a3-4abe-9b36-7339c3c68a53",
+    "portfolioName": "School Fees",
+    "portfolioShortName": "School Fees",
+    "quantity": "13.6973684",
+    "marketValueOrCurrentValue": "87905.3011446",
+    "marketValueOrCurrentValueWithCurrency": "5624.1395486",
+    "fxProfitLoss": "17497.494596124",
+    "profitLoss": "37116.69323445",
+    "profitLossRatio": "73.0807454",
+    "avgPrice": "318.9599915",
+    "accruedInterest": null,
+    "purchaseYield": null,
+    "totalCost": "50788.60791015",
+    "totalCostWithCurrency": "4368.9125084",
+    "profitLossWithCurrency": "1255.2270402",
+    "capitalProfitLossWithCurrency": "1255.2270402",  // (Total profit and loss)
+    "capitalProfitLossWithCurrencyPercentage": "28.7308807", // (Total profit and loss)
+    "nextDividendValueWithCurrency": null,
+    "accruedInterestWithCurrency": null,
+    "marketYield": null,
+    "marketPrice": "410.6000061",
+    "fxMarketQuoteLast": "15.63",
+    "marketQuoteTimestamp": "28-08-2024",
+    "fxMarketQuoteDate": "28-08-2024",
+    "marketCleanPricePercentage": null,
+    "maturityValue": null,
+    "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "symbol": "$",
+      "logoKey": "32088395-d294-4a67-89bd-39920bab0385"
     },
-    "quantity": 1000000,
-    "marketValue": 998500,
-    "currentValue": 998500,
-    "marketPrice": 99.85,
-    "marketYield": 0.015,
-    "profitLoss": -1500,
-    "profitLossRatio": -0.0015,
- "children": [{
-      "marketOrCurrentValue": "string",
-      "capitalProfitLossWithCurrency": "string",
-      "capitalProfitLossWithCurrencyPercentage": "string"
-      "difference": {
-          "capitalProfitLossWithCurrency": "string"
-      },
-    }],
-
-"error": true,
-    "errorMessage": {
-      "additionalProp1": "string",
-      "additionalProp2": "string",
-      "additionalProp3": "string"
-    },
-    "errorRawString": {
-      "additionalProp1": "string",
-      "additionalProp2": "string",
-      "additionalProp3": "string"
-    },
+    "marketCouponRate": null,
+    "marketValueOrCurrentValueChangePercentage": "-0.7829089",
+    "difference": {
+      "capitalProfitLossWithCurrency": "-44.37933938178968", // (1D change)
+      "capitalProfitLossWithCurrencyPercentage": "-1.0157983" // (1D change)
+    }
   }
 ]
+
 ```
 
 ### Notes
