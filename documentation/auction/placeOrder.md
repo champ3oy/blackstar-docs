@@ -25,14 +25,14 @@ Content-Type: application/json
 | ------------------------------ | ------------- | -------- | ----------------------------------------------------------- |
 | securityUUID                   | string (UUID) | Yes      | Unique identifier of the security                           |
 | orderSide                      | string        | Yes      | Side of the order (e.g., "BUY")                   |
-| orderType                      | string        | Yes      | Type of order (e.g., "MARKET")                   |
-| quantity                       | number        | Yes      | Quantity of securities to order                             |
+| orderType                      | string        | Yes      | Type of order (use "MARKET")                   |
+| quantity                       | number        | Yes      | Maturity amount of order                             |
 | yield                          | number        | No       | Yield of the security                                       |
-| considerationWithCurrency      | number        | No       | Consideration amount including currency                     |
+| considerationWithCurrency      | number        | No       | Consideration amount in security's currency                     |
 | settlementType                 | string        | No       | Type of settlement (e.g., "T0")               |
 | orderValidity                  | string        | No       | Validity of the order (e.g., "GTC" for Good Till Cancelled) |
 | orderOfferId                   | string (UUID) | No       | Tender ID                        |
-| primaryAuctionType             | string        | No       | Type of primary auction (e.g., "COMPETITIVE")               |
+| primaryAuctionType             | string        | No       | Type of primary auction (e.g., "NON-COMPETITIVE")               |
 
 ## Response
 
@@ -46,7 +46,7 @@ Key fields in the response:
 
 - `id`: Unique identifier of the created order
 - `clientOrderStatus`: Status of the client order (e.g., "SUBMITTED")
-- `executedQuantity`: Quantity of securities executed
+- `executedQuantity`: Maturity amount of executed security
 - `executedConsiderationWithCurrency`: Executed consideration amount including currency
 - `executedAvgPrice`: Average execution price
 - `executedAvgYield`: Average execution yield
