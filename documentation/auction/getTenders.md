@@ -13,10 +13,8 @@ The `List Order Offer` API retrieves a list of available tenders for auction
 | Name        | Type          | Description     | Required | Location |
 | ----------- | ------------- | --------------- | -------- | -------- |
 | clientId    | string        | Client UUID     | Yes      | Path     |
-| portfolioId | string        | Portfolio UUID  | No       | Query    |
-| page        | integer       | Current page    | Yes      | Query    |
+| page        | integer       | Current page, starts from 0    | Yes      | Query    |
 | size        | integer       | Maximum records | Yes      | Query    |
-| sort        | array[string] | Sort order      | No       | Query    |
 
 ## Request Body
 
