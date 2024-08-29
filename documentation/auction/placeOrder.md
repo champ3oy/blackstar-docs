@@ -51,17 +51,6 @@ Key fields in the response:
 
 ```json
 {
-  "error": true,
-  "errorMessage": {
-    "additionalProp1": "string",
-    "additionalProp2": "string",
-    "additionalProp3": "string"
-  },
-  "errorRawString": {
-    "additionalProp1": "string",
-    "additionalProp2": "string",
-    "additionalProp3": "string"
-  },
   "securityUUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
   "isin": "string",
   "name": "string",
@@ -145,14 +134,6 @@ Key fields in the response:
   "cancellable": true
 }
 ```
-
-### Error Response
-
-In case of an error, the response will include:
-
-- error: Boolean indicating if an error occurred
-- errorMessage: Object containing error messages
-- errorRawString: Object containing raw error strings
 
 ## Example Usage
 
