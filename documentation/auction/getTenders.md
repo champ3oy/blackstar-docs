@@ -47,8 +47,8 @@ The `List Order Offer` API retrieves a list of available tenders for auction
 | `securityName`                                | string | Name of the security                                               |
 | `minOrderAmount`                              | integer | Minimum order amount for non competitive bids                                               |
 | `minOrderAmountForCompetitivePrimaryAuction`  | integer | Minimum order amount for competitive bids               |
-| `minYield`                                    | integer | Minimum yield                                       |
-| `maxYield`                                    | integer | Maximum yield                                       |
+| `minYield`                                    | integer | Minimum yield allowable                                       |
+| `maxYield`                                    | integer | Maximum yield allowable                                       |
 | `prevYield`                                   | integer | Previous yield value                                              |
 | `primaryAuctionType`                          | string  | Type of the primary auction, "BOTH", "COMPETITIVE", "NON_COMPETITIVE".     |
 | `issueDate`                          | string  | Date when security was issued.     |
