@@ -51,6 +51,7 @@ The `List Order Offer` API retrieves a list of available tenders for auction
 | `maxYield`                                    | integer | Maximum yield                                       |
 | `prevYield`                                   | integer | Previous yield value                                              |
 | `primaryAuctionType`                          | string  | Type of the primary auction, "BOTH", "COMPETITIVE", "NON_COMPETITIVE".     |
+| `issueDate`                          | string  | Date when security was issued.     |
 
 
 ### JSON Response Body

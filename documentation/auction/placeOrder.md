@@ -42,7 +42,7 @@ Key fields in the response:
 
 - `id`: Unique identifier of the created order
 - `clientOrderStatus`: Status of the client order (e.g., "SUBMITTED")
-- `executedQuantity`: Quantity of securities executed
+- `executedQuantity`: Maturity amount of executed security
 - `executedConsiderationWithCurrency`: Executed consideration amount including currency
 - `executedAvgPrice`: Average execution price
 - `executedAvgYield`: Average execution yield
