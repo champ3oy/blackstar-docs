@@ -25,10 +25,12 @@ Content-Type: application/json
 | ------------------------------ | ------------- | -------- | ----------------------------------------------------------- |
 | securityUUID                   | string (UUID) | Yes      | Unique identifier of the security                           |
 | orderSide                      | string        | Yes      | Side of the order (should always be "BUY")                   |
-| yield                          | number        | Yes (for COMPETITIVE)       | Yield of the security                                       |
+| yield                          | number        | Yes (for COMPETITIVE)       | Interest rate of the security                                       |
 | consideration      | number        | Yes       | Consideration amount                    |
 | orderOfferId                   | string (UUID) | Yes       | ID from the order offer request                        |
 | primaryAuctionType             | string        | Yes       | Type of primary auction (e.g., "COMPETITIVE")               |
+
+## Note :- For competitive order yield (rate) should be passed while placing order which is entered by user at the time of place order and it must be between minYield and maxYield. If minYield or MaxYield is null in that case competitive order is not allowed.
 
 ## Response
 
