@@ -1,4 +1,4 @@
-### Calculate Maturity Amount and Estimate Interest
+# Calculate Maturity Amount and Estimate Interest
 
 #### Endpoint
 **POST** `/api/client/{clientId}/portfolio/{portfolioId}/product/{productId}/consideration`
