@@ -88,17 +88,6 @@ This API endpoint retrieves a list of orders for a specific client or portfolio.
   "size": 0,
   "content": [
     {
-      "error": true,
-      "errorMessage": {
-        "additionalProp1": "string",
-        "additionalProp2": "string",
-        "additionalProp3": "string"
-      },
-      "errorRawString": {
-        "additionalProp1": "string",
-        "additionalProp2": "string",
-        "additionalProp3": "string"
-      },
       "securityUUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
       "isin": "string",
       "name": "string",
@@ -113,8 +102,8 @@ This API endpoint retrieves a list of orders for a specific client or portfolio.
       "issuer": "string",
       "securityType": "string",
       "sector": "string",
-      "maturityDate": "2024-07-02T10:29:46.671Z",
-      "issueDate": "2024-07-02T10:29:46.671Z",
+      "maturityDate": "2024-08-30T10:20:22.043Z",
+      "issueDate": "2024-08-30T10:20:22.043Z",
       "securityCurrency": {
         "code": "string",
         "name": "string",
@@ -137,10 +126,74 @@ This API endpoint retrieves a list of orders for a specific client or portfolio.
         "logoKey": "string"
       },
       "description": "string",
-      "fractionalQuantityAllow": true
-      "cancellable:" true
+      "fractionalQuantityAllow": true,
+      "logoPath": "string",
+      "tendorNo": "string",
+      "underlyingSecurityUUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "underlyingAssetClass": "BILL",
+      "underlyingSecurityId": "string",
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "clientId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "clientName": "string",
+      "clientCode": "string",
+      "clientTypeName": "string",
+      "clientSubTypeName": "string",
+      "portfolioId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "portfolioName": "string",
+      "portfolioShortName": "string",
+      "portfolioCode": 0,
+      "orderSide": "BUY",
+      "settlementType": "T0",
+      "orderValidity": "GTC",
+      "orderType": "MARKET",
+      "clientOrderStatus": "SUBMITTED",
+      "quantity": 0,
+      "executedQuantity": 0,
+      "remainingQuantity": 0,
+      "executedConsiderationWithCurrency": 0,
+      "price": 0,
+      "yield": 0,
+      "cleanPricePercentage": 0,
+      "considerationWithCurrency": 0,
+      "executedAvgPrice": 0,
+      "executedAvgYield": 0,
+      "executedAvgCleanPricePercentage": 0,
+      "pickedBy": "string",
+      "offerActivateOn": "2024-08-30T10:20:22.043Z",
+      "offerExpireOn": "2024-08-30T10:20:22.043Z",
+      "counterPartyUUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "counterPartyName": "string",
+      "counterPartyAlias": "string",
+      "orderDate": "2024-08-30T10:20:22.043Z",
+      "managedSecurity": true,
+      "clientReference": "string",
+      "securityName": "string",
+      "companyNameOrIssuer": "string",
+      "cancellable": true
     }
-  ]
+  ],
+  "number": 0,
+  "sort": {
+    "empty": true,
+    "sorted": true,
+    "unsorted": true
+  },
+  "numberOfElements": 0,
+  "pageable": {
+    "offset": 0,
+    "sort": {
+      "empty": true,
+      "sorted": true,
+      "unsorted": true
+    },
+    "pageNumber": 0,
+    "pageSize": 0,
+    "paged": true,
+    "unpaged": true
+  },
+  "first": true,
+  "last": true,
+  "empty": true
 }
 ```
 
