@@ -26,7 +26,7 @@ Content-Type: application/json
 | securityUUID                   | string (UUID) | Yes      | Unique identifier of the security                           |
 | orderSide                      | string        | Yes      | Side of the order (e.g., "BUY" or "SELL")                   |
 | orderType                      | string        | Yes      | Type of order (e.g., "MARKET" or "LIMIT")                   |
-| sendToBank                      | boolean        | Yes      | Should be `true` at all times                   |
+| sendToBank                      | boolean        | Yes (for SELL orders)      | Should be `true` at all times                   |
 | quantity                       | number        | No       | Quantity of securities to order                             |
 | price                          | number        | No       | Price per security (required for limit orders)              |
 | yield                          | number        | No       | Yield of the security                                       |
