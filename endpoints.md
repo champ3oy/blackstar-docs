@@ -1,6 +1,6 @@
 # Endpoints
 
-Get all our `endpoints` and `schema` data on our [Swagger UI](https://api.uatdev.blackstargroup.ai/swagger-ui/)
+Get all our `endpoints` and `schema` data on our [Swagger UI](https://api.uatdev.blackstargroup.ai/swagger-ui/index.html)
 
 ### Note
 
