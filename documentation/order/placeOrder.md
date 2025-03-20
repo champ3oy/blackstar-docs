@@ -1,47 +1,50 @@
 # Create Client Order
 
-## Endpoint
+This endpoint allows you to create an order for a client within a specific portfolio.
+
+> **New** 📢
+> You can now add a webhook for order status updates
+> When an order is created, you can include a webhook URL in the request body
+
+## Endpoint Details
 
 ```
 POST /api/client/{clientId}/portfolio/{portfolioId}/order/v1/place
 ```
 
-## Description
+## Request
 
-This endpoint allows you to create an order for a client within a specific portfolio.
-
-## Parameters
+### Parameters
 
 | Name        | Type          | Location | Required | Description                            |
 | ----------- | ------------- | -------- | -------- | -------------------------------------- |
 | clientId    | string (UUID) | path     | Yes      | The unique identifier of the client    |
 | portfolioId | string (UUID) | path     | Yes      | The unique identifier of the portfolio |
 
-## Request Body
+### Request Body
 
-Content-Type: application/json
-
-| Field                          | Type          | Required | Description                                                 |
-| ------------------------------ | ------------- | -------- | ----------------------------------------------------------- |
-| securityUUID                   | string (UUID) | Yes      | Unique identifier of the security                           |
-| orderSide                      | string        | Yes      | Side of the order (e.g., "BUY" or "SELL")                   |
-| orderType                      | string        | Yes      | Type of order (e.g., "MARKET" or "LIMIT")                   |
-| sendToBank                      | boolean        | Yes (for SELL orders)      | Should be `true` at all times                   |
-| quantity                       | number        | No       | Quantity of securities to order                             |
-| price                          | number        | No       | Price per security (required for limit orders)              |
-| yield                          | number        | No       | Yield of the security                                       |
-| considerationWithCurrency      | number        | No       | Consideration amount including currency                     |
-| totalConsiderationWithCurrency | number        | No       | Total consideration amount including currency               |
-| description                    | string        | No       | Additional description for the order                        |
-| counterPartyUUID               | string (UUID) | No       | Unique identifier of the counterparty                       |
-| settlementType                 | string        | No       | Type of settlement (e.g., "T0", "T+1", "T+2")               |
-| orderValidity                  | string        | No       | Validity of the order (e.g., "GTC" for Good Till Cancelled) |
-| orderOfferId                   | string (UUID) | No       | Unique identifier of the order offer                        |
-| primaryAuctionType             | string        | No       | Type of primary auction (e.g., "COMPETITIVE")               |
-| consideration                  | number        | No       | Consideration amount                                        |
-| totalConsideration             | number        | No       | Total consideration amount                                  |
-| currency                       | string        | No       | Currency code                                               |
-| clientReference                | string        | No       | Client's payment reference                                  |
+| Field                          | Type          | Required              | Description                                                 |
+| ------------------------------ | ------------- | --------------------- | ----------------------------------------------------------- |
+| securityUUID                   | string (UUID) | Yes                   | Unique identifier of the security                           |
+| orderSide                      | string        | Yes                   | Side of the order (e.g., "BUY" or "SELL")                   |
+| orderType                      | string        | Yes                   | Type of order (e.g., "MARKET" or "LIMIT")                   |
+| sendToBank                     | boolean       | Yes (for SELL orders) | Should be `true` at all times                               |
+| quantity                       | number        | No                    | Quantity of securities to order                             |
+| price                          | number        | No                    | Price per security (required for limit orders)              |
+| yield                          | number        | No                    | Yield of the security                                       |
+| considerationWithCurrency      | number        | No                    | Consideration amount including currency                     |
+| totalConsiderationWithCurrency | number        | No                    | Total consideration amount including currency               |
+| description                    | string        | No                    | Additional description for the order                        |
+| counterPartyUUID               | string (UUID) | No                    | Unique identifier of the counterparty                       |
+| settlementType                 | string        | No                    | Type of settlement (e.g., "T0", "T+1", "T+2")               |
+| orderValidity                  | string        | No                    | Validity of the order (e.g., "GTC" for Good Till Cancelled) |
+| orderOfferId                   | string (UUID) | No                    | Unique identifier of the order offer                        |
+| primaryAuctionType             | string        | No                    | Type of primary auction (e.g., "COMPETITIVE")               |
+| consideration                  | number        | No                    | Consideration amount                                        |
+| totalConsideration             | number        | No                    | Total consideration amount                                  |
+| currency                       | string        | No                    | Currency code                                               |
+| clientReference                | string        | No                    | Client's payment reference                                  |
+| webhookUrl                     | string        | No                    | Client's payment reference                                  |
 
 ## Response
 
@@ -159,6 +162,25 @@ Key fields in the response:
   "cancellable": true
 }
 ```
+
+### Webhook Data
+
+```json
+{
+  "eventType": "PAYMENT_STATUS",
+  "status": "SUCCESS",
+  "clientReference": "abcdqwerty",
+  "transactionCode": "zxcvbnmqwerty",
+  "amount": 1,
+  "reasonForFailure": null
+}
+```
+
+Additionally, kindly make sure to whitelist our production IP (18.102.87.24) on the API receiving the webhook. This will ensure that only we can send messages to the webhook, and no one else can push messages to it.
+
+Once the payment is completed, we will send an immediate webhook response.
+If the first attempt fails, the first retry will occur after 5-10 minutes, followed by a second retry after another 5-10 minutes.
+In total, we will attempt three retries.
 
 ### Error Response
 
