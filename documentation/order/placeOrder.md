@@ -44,7 +44,7 @@ POST /api/client/{clientId}/portfolio/{portfolioId}/order/v1/place
 | totalConsideration             | number        | No                    | Total consideration amount                                  |
 | currency                       | string        | No                    | Currency code                                               |
 | clientReference                | string        | No                    | Client's payment reference                                  |
-| webhookUrl                     | string        | No                    | Client's payment reference                                  |
+| webhookUrl                     | string        | No                    | Webhook URL to receive status update                        |
 
 ## Response
 
@@ -165,6 +165,8 @@ Key fields in the response:
 
 ### Webhook Data
 
+Payment event
+
 ```json
 {
   "eventType": "PAYMENT_STATUS",
@@ -173,6 +175,23 @@ Key fields in the response:
   "transactionCode": "zxcvbnmqwerty",
   "amount": 1,
   "reasonForFailure": null
+}
+```
+
+Order event
+
+```json
+{
+  "eventType": "ORDER_STATUS",
+  "timeStamp": "13-03-2025 05:47",
+  "clientOrderId": "04ef5a6b-2dc4-4e6d-bc04-df3134099f1e",
+  "orderSide": "SELL",
+  "clientOrderStatus": "EXECUTED",
+  "executedQuantity": 0.0648305,
+  "executedConsiderationWithCurrency": 10.0,
+  "executedAvgPrice": 154.2483,
+  "orderDate": "24-02-2025",
+  "clientReference": null
 }
 ```
 
