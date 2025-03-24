@@ -29,6 +29,7 @@ POST /api/client/{clientId}/portfolio/{portfolioId}/order/v1/place
 | orderSide                      | SELL          | Yes                   | Sell security only                                          |
 | orderType                      | string        | Yes                   | Type of order (e.g., "MARKET" or "LIMIT")                   |
 | sendToBank                     | boolean       | Yes (for SELL orders) | Should be `true` at all times                               |
+| paymentRequestMode                     | string       | Send money to Momo or Bank (MOBILE_MONEY or BANK_TRANSAFER)                               |
 | quantity                       | number        | No                    | Quantity of securities to order                             |
 | price                          | number        | No                    | Price per security (required for limit orders)              |
 | yield                          | number        | No                    | Yield of the security                                       |
@@ -44,7 +45,14 @@ POST /api/client/{clientId}/portfolio/{portfolioId}/order/v1/place
 | totalConsideration             | number        | No                    | Total consideration amount                                  |
 | currency                       | string        | No                    | Currency code                                               |
 | clientReference                | string        | No                    | Client's payment reference                                  |
-| webhookUrl                     | string        | No                    | Webhook URL to receive status update                        |
+| mobileMoneyNumber                     | string        | No                    | Mobile money number to receive payout                        |
+| mobileMoneyProvider                     | string        | No                    | Momo provider ([ MTN_GH, VODAFONE_GH, TIGO_GH ])                        |
+| mobileMoneyDetailId                     | string        | No                    | Mobile money ID stored with Blackstar                        |
+
+`Note`
+- If the user wishes to withdraw funds to their bank account, set the paymentRequestMode to BANK_TRANSFER and sendToBank to true.
+
+- If the user wants to withdraw funds to their mobile money account, set the paymentRequestMode to MOBILE_MONEY, sendToBank to true, and include the selected mobileMoneyDetailId.
 
 ## Response
 
