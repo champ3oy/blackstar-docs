@@ -29,7 +29,7 @@ POST /api/client/{clientId}/portfolio/{portfolioId}/order/v1/place
 | orderSide                      | SELL          | Yes                   | Sell security only                                          |
 | orderType                      | string        | Yes                   | Type of order (e.g., "MARKET" or "LIMIT")                   |
 | sendToBank                     | boolean       | Yes (for SELL orders) | Should be `true` at all times                               |
-| paymentRequestMode                     | string       | Send money to Momo or Bank (MOBILE_MONEY or BANK_TRANSAFER)                               |
+| paymentRequestMode                     | string       | No | Send money to Momo or Bank (MOBILE_MONEY or BANK_TRANSAFER)                               |
 | quantity                       | number        | No                    | Quantity of securities to order                             |
 | price                          | number        | No                    | Price per security (required for limit orders)              |
 | yield                          | number        | No                    | Yield of the security                                       |
