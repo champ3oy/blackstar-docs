@@ -2,7 +2,7 @@
 
 ## Overview
 
-The `Validate Pre-Approval OTP` endpoint allows you to verify an OTP (One-Time Password) to authorize the pre-approval of a recurring payment plan. This endpoint is specifically designed for recurring payment plans in the `PENDING_VERIFICATION_PREAPPROVAL` status. Upon successful validation, the OTP is confirmed, and the pre-approval process is authorized.
+The `Validate Pre-Approval OTP` endpoint allows you to verify an OTP (One-Time Password) to authorize the pre-approval of a recurring payment plan. This endpoint is specifically designed for recurring payment plans in the `PENDING_VERIFICATION_PREAPPROVAL_OTP` status. Upon successful validation, the OTP is confirmed, and the pre-approval process is authorized.
 
 ---
 
@@ -147,4 +147,5 @@ axios
 1. Ensure that the `clientId`, `portfolioId`, and `rppId` are valid UUIDs.
 2. The OTP must match the one sent to the user for verification.
 3. If the OTP is invalid or expired, a `400 Bad Request` response will be returned.
-4. The endpoint is only applicable for recurring payment plans in the `PENDING_VERIFICATION_PREAPPROVAL` status.
+4. The endpoint is only applicable for recurring payment plans in the `PENDING_VERIFICATION_PREAPPROVAL_OTP` status.
+5. The OTP verified successfully , and the pre-approval process will be authorized and RPP status will be changed with ACTIVE

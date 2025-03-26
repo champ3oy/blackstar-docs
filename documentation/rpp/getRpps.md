@@ -52,7 +52,7 @@ The request was successful, and the recurring payment plan details were retrieve
   "planName": "Monthly Savings Plan",
   "frequency": "DAILY",
   "installmentAmount": 50,
-  "startDate": "2025-03-25T12:15:26.816Z",
+  "startDate": "25-03-2025T12:15:26.816Z",
   "endDate": "2026-03-25T12:15:26.816Z",
   "status": "ACTIVE",
   "archived": false,

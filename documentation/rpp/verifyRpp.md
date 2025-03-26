@@ -58,8 +58,8 @@ The request was successful, and the OTP or USSD prompt was sent.
   "planName": "string",
   "frequency": "DAILY",
   "installmentAmount": 0,
-  "startDate": "2025-03-25T12:26:33.481Z",
-  "endDate": "2025-03-25T12:26:33.481Z",
+  "startDate": "25-03-2025T12:26:33.481Z",
+  "endDate": "25-03-2025T12:26:33.481Z",
   "status": "ACTIVE",
   "archived": true,
   "otpReferenceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
@@ -77,7 +77,7 @@ The request was successful, and the OTP or USSD prompt was sent.
 | - `allocationPercentage` | number  | Percentage of the allocation for the security.                                                                                                               |
 | - `securitySymbol`       | string  | Symbol or identifier for the security.                                                                                                                       |
 | `planName`               | string  | Name of the recurring payment plan.                                                                                                                          |
-| `frequency`              | string  | Frequency of the payments (e.g., DAILY, WEEKLY, MONTHLY).                                                                                                    |
+| `frequency`              | string  | Frequency of the payments (e.g., DAILY, WEEKLY, MONTHLY, QUARTERLY).                                                                                         |
 | `installmentAmount`      | number  | Amount of each installment.                                                                                                                                  |
 | `startDate`              | string  | Start date of the recurring payment plan in ISO 8601 format.                                                                                                 |
 | `endDate`                | string  | End date of the recurring payment plan in ISO 8601 format.                                                                                                   |
@@ -97,21 +97,6 @@ The request contains invalid input data.
 {
   "error": "Invalid input data",
   "details": "The 'clientId' must be a valid UUID."
-}
-```
-
----
-
-### 409 Conflict
-
-The preapproval is already approved, and no further verification is required.
-
-#### Example Response Body
-
-```json
-{
-  "error": "Preapproval already approved",
-  "details": "No further verification is required for this recurring payment plan."
 }
 ```
 
@@ -178,3 +163,4 @@ axios
    - For `PENDING_VERIFICATION_PREAPPROVAL_USSD`, a USSD prompt will be initiated from Hubtel.
    - For `PENDING_VERIFICATION_OTP`, an OTP will be sent from our end if the preapproval is already approved.
 3. If the verification fails, check the error message in the response for details on why the operation was unsuccessful.
+4. This endpoint is specifically designed for retrying mechanism for RPP creation, if anyhow user unable to get OTP , USSD prompt by huntel or OTP from our end , then this API is useful to retry mechanism

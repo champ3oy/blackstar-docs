@@ -2,7 +2,7 @@
 
 ## Overview
 
-The `Create Recurring Payment Plan` endpoint allows you to create a new recurring payment plan for a selected portfolio and security(s). This endpoint requires two mandatory path parameters: `clientId` and `portfolioId`. It also accepts a JSON request body containing the details of the recurring payment plan. Upon successful creation, it returns the details of the newly created plan.
+The `Create Recurring Payment Plan` endpoint allows you to create a new recurring payment plan for a selected portfolio and securities. This endpoint requires two mandatory path parameters: `clientId` and `portfolioId`. It also accepts a JSON request body containing the details of the recurring payment plan. Upon successful creation, it returns the details of the newly created plan.
 
 ---
 
@@ -42,9 +42,9 @@ The request body must be in `application/json` format and includes the following
 | `planName`               | string | Name of the recurring payment plan.                                     |
 | `frequency`              | string | Frequency of the payments (e.g., DAILY, WEEKLY, MONTHLY, QUARTERLY ).   |
 | `installmentAmount`      | number | Amount of each installment.                                             |
-| `endDate`                | string | End date of the recurring payment plan in ISO 8601 format.              |
+| `endDate`                | string | End date of the recurring payment plan in ISO 8601 format(DD-MM-YYY).   |
 | `channel`                | string | Payment channel (`MTN_GH_DIRECT_DEBIT` or `VODAFONE_GH_DIRECT_DEBIT `). |
-| `startDate`              | string | Start date of the recurring payment plan in ISO 8601 format.            |
+| `startDate`              | string | Start date of the recurring payment plan in ISO 8601 format(DD-MM-YYY). |
 | `mobileMoneyDetailId`    | string | Unique identifier for the mobile money detail of the user.              |
 
 `Note:` `TIGO_GH`(AirtelTigo) is not supported for creating recurring payment plans
@@ -63,9 +63,9 @@ The request body must be in `application/json` format and includes the following
   "planName": "Monthly Savings Plan",
   "frequency": "DAILY",
   "installmentAmount": 50,
-  "endDate": "2026-03-25T12:24:12.270Z",
+  "endDate": "2026-03-25",
   "channel": "MTN_GH_DIRECT_DEBIT",
-  "startDate": "2025-03-25T12:24:12.270Z",
+  "startDate": "25-03-2025",
   "mobileMoneyDetailId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
 }
 ```
@@ -94,8 +94,8 @@ The request was successful, and the recurring payment plan was created.
   "planName": "Monthly Savings Plan",
   "frequency": "DAILY",
   "installmentAmount": 50,
-  "startDate": "2025-03-25T12:24:12.271Z",
-  "endDate": "2026-03-25T12:24:12.271Z",
+  "startDate": "25-03-2025",
+  "endDate": "2026-03-25",
   "status": "ACTIVE",
   "archived": false,
   "otpReferenceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
@@ -113,10 +113,10 @@ The request was successful, and the recurring payment plan was created.
 | - `allocationPercentage` | number  | Percentage of the allocation for the security.                                                                                                               |
 | - `securitySymbol`       | string  | Symbol or identifier for the security.                                                                                                                       |
 | `planName`               | string  | Name of the recurring payment plan.                                                                                                                          |
-| `frequency`              | string  | Frequency of the payments (e.g., DAILY, WEEKLY, MONTHLY).                                                                                                    |
+| `frequency`              | string  | Frequency of the payments (e.g., DAILY, WEEKLY, MONTHLY, QUARTERLY).                                                                                         |
 | `installmentAmount`      | number  | Amount of each installment.                                                                                                                                  |
-| `startDate`              | string  | Start date of the recurring payment plan in ISO 8601 format.                                                                                                 |
-| `endDate`                | string  | End date of the recurring payment plan in ISO 8601 format.                                                                                                   |
+| `startDate`              | string  | Start date of the recurring payment plan in ISO 8601 format(DD-MM-YYY).                                                                                      |
+| `endDate`                | string  | End date of the recurring payment plan in ISO 8601 format(DD-MM-YYY).                                                                                        |
 | `status`                 | string  | Current status of the plan ACTIVE, PENDING_VERIFICATION_PREAPPROVAL_OTP, PENDING_VERIFICATION_OTP, INACTIVE, PENDING_VERIFICATION_PREAPPROVAL_USSD, EXPIRED. |
 | `archived`               | boolean | Indicates whether the plan is archived.                                                                                                                      |
 | `otpReferenceId`         | string  | Reference ID for OTP verification (if applicable).                                                                                                           |
@@ -157,9 +157,9 @@ curl -X POST "https://api.example.com/api/rpp/client/{clientId}/portfolio/{portf
   "planName": "Monthly Savings Plan",
   "frequency": "DAILY",
   "installmentAmount": 50,
-  "endDate": "2026-03-25T12:24:12.270Z",
+  "endDate": "2026-03-25",
   "channel": "MTN_GH_DIRECT_DEBIT",
-  "startDate": "2025-03-25T12:24:12.270Z",
+  "startDate": "25-03-2025",
   "mobileMoneyDetailId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
 }'
 ```
@@ -191,9 +191,9 @@ const requestData = {
   planName: "Monthly Savings Plan",
   frequency: "DAILY",
   installmentAmount: 50,
-  endDate: "2026-03-25T12:24:12.270Z",
+  endDate: "2026-03-25",
   channel: "MTN_GH_DIRECT_DEBIT",
-  startDate: "2025-03-25T12:24:12.270Z",
+  startDate: "25-03-2025",
   mobileMoneyDetailId: "3fa85f64-5717-4562-b3fc-2c963f66afa6",
 };
 
@@ -234,3 +234,5 @@ axios
 3. The `endDate` must be a valid ISO 8601 date and should not be earlier than the `startDate`.
 4. The `channel` field specifies the payment method (e.g., `MTN_GH_DIRECT_DEBIT`).
 5. If the creation fails, check the error message in the response for details on why the operation was unsuccessful.
+6. Either mobileMoneyDetailId must be present OR both customerMsisdn and channel must be provided
+7. StartDate mustbe the future date as first installment will be created on successful RPP verification

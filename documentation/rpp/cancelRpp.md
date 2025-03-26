@@ -44,36 +44,8 @@ The recurring payment plan was successfully canceled.
   "planName": "string",
   "frequency": "DAILY",
   "installmentAmount": 0,
-  "startDate": "2025-03-25T12:46:46.029Z",
-  "endDate": "2025-03-25T12:46:46.029Z",
-  "status": "ACTIVE",
-  "archived": true,
-  "otpReferenceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
-}
-```
-
-#### 404 Not Found
-
-The specified recurring payment plan could not be found.
-
-**Example Response:**
-
-```json
-{
-  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-  "customerMsisdn": "string",
-  "securityAllocations": [
-    {
-      "securityUUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-      "allocationPercentage": 100,
-      "securitySymbol": "string"
-    }
-  ],
-  "planName": "string",
-  "frequency": "DAILY",
-  "installmentAmount": 0,
-  "startDate": "2025-03-25T12:46:46.033Z",
-  "endDate": "2025-03-25T12:46:46.033Z",
+  "startDate": "25-03-2025",
+  "endDate": "25-03-2025",
   "status": "ACTIVE",
   "archived": true,
   "otpReferenceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"

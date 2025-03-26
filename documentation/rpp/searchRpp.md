@@ -50,10 +50,10 @@ The request body must be in `application/json` format and includes the following
 
 ```json
 {
-  "fromStartDate": "2025-03-25T12:34:52.282Z",
-  "toStartDate": "2025-03-25T12:34:52.282Z",
-  "fromEndDate": "2025-03-25T12:34:52.282Z",
-  "toEndDate": "2025-03-25T12:34:52.282Z",
+  "fromStartDate": "25-03-2025",
+  "toStartDate": "25-03-2025",
+  "fromEndDate": "25-03-2025",
+  "toEndDate": "25-03-2025",
   "page": 0,
   "size": 10
 }
@@ -86,8 +86,8 @@ The request was successful, and the recurring payment plans were retrieved.
       "planName": "string",
       "frequency": "DAILY",
       "installmentAmount": 0,
-      "startDate": "2025-03-25T12:34:52.284Z",
-      "endDate": "2025-03-25T12:34:52.284Z",
+      "startDate": "25-03-2025T12:34:52.284Z",
+      "endDate": "25-03-2025T12:34:52.284Z",
       "status": "ACTIVE",
       "archived": true,
       "otpReferenceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
@@ -109,10 +109,10 @@ The request was successful, and the recurring payment plans were retrieved.
 | -- `allocationPercentage` | number  | Percentage of the allocation for the security.                                                                                                               |
 | -- `securitySymbol`       | string  | Symbol or identifier for the security.                                                                                                                       |
 | - `planName`              | string  | Name of the recurring payment plan.                                                                                                                          |
-| - `frequency`             | string  | Frequency of the payments (e.g., DAILY, WEEKLY, MONTHLY).                                                                                                    |
+| - `frequency`             | string  | Frequency of the payments (e.g., DAILY, WEEKLY, MONTHLY, QUARTERLY).                                                                                         |
 | - `installmentAmount`     | number  | Amount of each installment.                                                                                                                                  |
-| - `startDate`             | string  | Start date of the recurring payment plan in ISO 8601 format.                                                                                                 |
-| - `endDate`               | string  | End date of the recurring payment plan in ISO 8601 format.                                                                                                   |
+| - `startDate`             | string  | Start date of the recurring payment plan in ISO 8601 format(DD-MM-YYY).                                                                                      |
+| - `endDate`               | string  | End date of the recurring payment plan in ISO 8601 format(DD-MM-YYY).                                                                                        |
 | - `status`                | string  | Current status of the plan ACTIVE, PENDING_VERIFICATION_PREAPPROVAL_OTP, PENDING_VERIFICATION_OTP, INACTIVE, PENDING_VERIFICATION_PREAPPROVAL_USSD, EXPIRED. |
 | - `archived`              | boolean | Indicates whether the plan is archived.                                                                                                                      |
 | - `otpReferenceId`        | string  | Reference ID for OTP verification (if applicable).                                                                                                           |
@@ -143,10 +143,10 @@ curl -X POST "https://api.example.com/api/rpp/client/{clientId}/portfolio/{portf
 -H "Content-Type: application/json" \
 -H "Accept: */*" \
 -d '{
-  "fromStartDate": "2025-03-25T12:34:52.282Z",
-  "toStartDate": "2025-03-25T12:34:52.282Z",
-  "fromEndDate": "2025-03-25T12:34:52.282Z",
-  "toEndDate": "2025-03-25T12:34:52.282Z",
+  "fromStartDate": "25-03-2025",
+  "toStartDate": "25-03-2025",
+  "fromEndDate": "25-03-2025",
+  "toEndDate": "25-03-2025",
   "page": 0,
   "size": 10
 }'
@@ -169,10 +169,10 @@ const clientId = "3fa85f64-5717-4562-b3fc-2c963f66afa6"; // Replace with actual 
 const portfolioId = "3fa85f64-5717-4562-b3fc-2c963f66afa6"; // Replace with actual portfolio UUID
 
 const requestData = {
-  fromStartDate: "2025-03-25T12:34:52.282Z",
-  toStartDate: "2025-03-25T12:34:52.282Z",
-  fromEndDate: "2025-03-25T12:34:52.282Z",
-  toEndDate: "2025-03-25T12:34:52.282Z",
+  fromStartDate: "25-03-2025",
+  toStartDate: "25-03-2025",
+  fromEndDate: "25-03-2025",
+  toEndDate: "25-03-2025",
   page: 0,
   size: 10,
 };

@@ -74,7 +74,7 @@ The request was successful, and the recurring payment plan was updated.
   "planName": "Updated Monthly Savings Plan",
   "frequency": "DAILY",
   "installmentAmount": 75.5,
-  "startDate": "2025-03-25T12:18:19.293Z",
+  "startDate": "25-03-2025T12:18:19.293Z",
   "endDate": "2026-03-25T12:18:19.293Z",
   "status": "ACTIVE",
   "archived": false,
@@ -93,7 +93,7 @@ The request was successful, and the recurring payment plan was updated.
 | - `allocationPercentage` | number  | Percentage of the allocation for the security.                                                                                                               |
 | - `securitySymbol`       | string  | Symbol or identifier for the security.                                                                                                                       |
 | `planName`               | string  | Updated name of the recurring payment plan.                                                                                                                  |
-| `frequency`              | string  | Frequency of the payments (e.g., DAILY, WEEKLY, MONTHLY).                                                                                                    |
+| `frequency`              | string  | Frequency of the payments (e.g., DAILY, WEEKLY, MONTHLY, QUARTERLY).                                                                                         |
 | `installmentAmount`      | number  | Updated amount of each installment.                                                                                                                          |
 | `startDate`              | string  | Start date of the recurring payment plan in ISO 8601 format.                                                                                                 |
 | `endDate`                | string  | Updated end date of the recurring payment plan in ISO 8601 format.                                                                                           |

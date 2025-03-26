@@ -64,7 +64,7 @@ The request was successful, and the passbook entries were retrieved.
       "transactionId": "txn12345",
       "status": "PENDING",
       "amount": 100.0,
-      "date": "2025-03-25T12:30:00Z"
+      "date": "25-03-2025T12:30:00Z"
     }
   ]
 }
@@ -72,14 +72,14 @@ The request was successful, and the passbook entries were retrieved.
 
 #### Response Fields
 
-| Field             | Type   | Description                                           |
-| ----------------- | ------ | ----------------------------------------------------- |
-| `id`              | string | Unique identifier for the recurring payment plan.     |
-| `entries`         | array  | List of passbook entries.                             |
-| - `transactionId` | string | Unique identifier for the transaction.                |
-| - `status`        | string | Status of the transaction (e.g., PENDING, COMPLETED). |
-| - `amount`        | number | Amount of the transaction.                            |
-| - `date`          | string | Date and time of the transaction in ISO 8601 format.  |
+| Field             | Type   | Description                                                                                                               |
+| ----------------- | ------ | ------------------------------------------------------------------------------------------------------------------------- |
+| `id`              | string | Unique identifier for the recurring payment plan.                                                                         |
+| `entries`         | array  | List of passbook entries.                                                                                                 |
+| - `transactionId` | string | Unique identifier for the transaction.                                                                                    |
+| - `status`        | string | Status of the transaction (e.g., PENDING, COMPLETED, FAILED,PROCESSING, PENDING_PAYMENT_CONFIRMATION, PAYMENT_CONFIRMED). |
+| - `amount`        | number | Amount of the transaction.                                                                                                |
+| - `date`          | string | Date and time of the transaction in ISO 8601 format.                                                                      |
 
 ---
 
