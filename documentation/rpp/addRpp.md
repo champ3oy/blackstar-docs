@@ -104,22 +104,25 @@ The request was successful, and the recurring payment plan was created.
 
 #### Response Fields
 
-| Field                    | Type    | Description                                                                                                                                                  |
-| ------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `id`                     | string  | Unique identifier for the recurring payment plan.                                                                                                            |
-| `customerMsisdn`         | string  | The mobile number of the customer associated with the plan.                                                                                                  |
-| `securityAllocations`    | array   | List of security allocations for the plan.                                                                                                                   |
-| - `securityUUID`         | string  | Unique identifier for the security.                                                                                                                          |
-| - `allocationPercentage` | number  | Percentage of the allocation for the security.                                                                                                               |
-| - `securitySymbol`       | string  | Symbol or identifier for the security.                                                                                                                       |
-| `planName`               | string  | Name of the recurring payment plan.                                                                                                                          |
-| `frequency`              | string  | Frequency of the payments (e.g., DAILY, WEEKLY, MONTHLY, QUARTERLY).                                                                                         |
-| `installmentAmount`      | number  | Amount of each installment.                                                                                                                                  |
-| `startDate`              | string  | Start date of the recurring payment plan in ISO 8601 format(DD-MM-YYY).                                                                                      |
-| `endDate`                | string  | End date of the recurring payment plan in ISO 8601 format(DD-MM-YYY).                                                                                        |
-| `status`                 | string  | Current status of the plan ACTIVE, PENDING_VERIFICATION_PREAPPROVAL_OTP, PENDING_VERIFICATION_OTP, INACTIVE, PENDING_VERIFICATION_PREAPPROVAL_USSD, EXPIRED. |
-| `archived`               | boolean | Indicates whether the plan is archived.                                                                                                                      |
-| `otpReferenceId`         | string  | Reference ID for OTP verification (if applicable).                                                                                                           |
+| Field                   | Type    | Description                                                                                                                                                  |
+| ----------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `id`                    | string  | Unique identifier for the recurring payment plan.                                                                                                            |
+| `customerMsisdn`        | string  | The mobile number of the customer associated with the plan.                                                                                                  |
+| `securityAllocations`   | array   | List of security allocations for the plan.                                                                                                                   |
+| -`securityUUID`         | string  | Unique identifier for the security.                                                                                                                          |
+| -`allocationPercentage` | number  | Percentage of the allocation for the security.                                                                                                               |
+| -`securitySymbol`       | string  | Symbol or identifier for the security.                                                                                                                       |
+| -`logoPath`             | string  | Logo for the security.                                                                                                                                       |
+| -`companyNameOrIssuer`  | string  | Company name or Issuer for the security.                                                                                                                     |
+| `planName`              | string  | Name of the recurring payment plan.                                                                                                                          |
+| `frequency`             | string  | Frequency of the payments (e.g., DAILY, WEEKLY, MONTHLY, QUARTERLY).                                                                                         |
+| `installmentAmount`     | number  | Amount of each installment.                                                                                                                                  |
+| `startDate`             | string  | Start date of the recurring payment plan in ISO 8601 format(DD-MM-YYY).                                                                                      |
+| `endDate`               | string  | End date of the recurring payment plan in ISO 8601 format(DD-MM-YYY).                                                                                        |
+| `status`                | string  | Current status of the plan ACTIVE, PENDING_VERIFICATION_PREAPPROVAL_OTP, PENDING_VERIFICATION_OTP, INACTIVE, PENDING_VERIFICATION_PREAPPROVAL_USSD, EXPIRED. |
+| `archived`              | boolean | Indicates whether the plan is archived.                                                                                                                      |
+| `otpReferenceId`        | string  | Reference ID for OTP verification (if applicable).                                                                                                           |
+| `installmentAmount`     | number  | Total completed installment amount                                                                                                                           |
 
 ---
 
