@@ -57,7 +57,10 @@ The request body must be in `application/json` format and includes the following
   "securityAllocations": [
     {
       "securityUUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-      "allocationPercentage": 100
+      "allocationPercentage": 100,
+      "securitySymbol": "string",
+      "logoPath": "string",
+      "companyNameOrIssuer": "string"
     }
   ],
   "planName": "Monthly Savings Plan",
@@ -88,7 +91,9 @@ The request was successful, and the recurring payment plan was created.
     {
       "securityUUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
       "allocationPercentage": 100,
-      "securitySymbol": "SEC123"
+      "securitySymbol": "SEC123",
+      "logoPath": "string",
+      "companyNameOrIssuer": "string"
     }
   ],
   "planName": "Monthly Savings Plan",
@@ -154,7 +159,7 @@ curl -X POST "https://api.example.com/api/rpp/client/{clientId}/portfolio/{portf
   "securityAllocations": [
     {
       "securityUUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-      "allocationPercentage": 100
+      "allocationPercentage": 100,
     }
   ],
   "planName": "Monthly Savings Plan",
