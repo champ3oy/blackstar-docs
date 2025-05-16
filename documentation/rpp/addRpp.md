@@ -58,9 +58,6 @@ The request body must be in `application/json` format and includes the following
     {
       "securityUUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
       "allocationPercentage": 100,
-      "securitySymbol": "string",
-      "logoPath": "string",
-      "companyNameOrIssuer": "string"
     }
   ],
   "planName": "Monthly Savings Plan",
@@ -103,7 +100,8 @@ The request was successful, and the recurring payment plan was created.
   "endDate": "2026-03-25",
   "status": "ACTIVE",
   "archived": false,
-  "otpReferenceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  "otpReferenceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "totalInvestedAmount": 0
 }
 ```
 
@@ -127,7 +125,7 @@ The request was successful, and the recurring payment plan was created.
 | `status`                | string  | Current status of the plan ACTIVE, PENDING_VERIFICATION_PREAPPROVAL_OTP, PENDING_VERIFICATION_OTP, INACTIVE, PENDING_VERIFICATION_PREAPPROVAL_USSD, EXPIRED. |
 | `archived`              | boolean | Indicates whether the plan is archived.                                                                                                                      |
 | `otpReferenceId`        | string  | Reference ID for OTP verification (if applicable).                                                                                                           |
-| `installmentAmount`     | number  | Total completed installment amount                                                                                                                           |
+| `totalInvestedAmount`     | number  | Total completed installment amount                                                                                                                           |
 
 ---
 

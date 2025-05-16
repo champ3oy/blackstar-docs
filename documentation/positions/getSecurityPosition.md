@@ -79,41 +79,74 @@ axios
 
 ```json
 {
-  "error": false,
-  "errorMessage": {},
-  "errorRawString": {},
-  "securityUUID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-  "isin": "US0378331005",
-  "name": "Apple Inc.",
-  "securityId": "AAPL",
-  "assetClass": "EQUITY",
-  "fundManager": "N/A",
-  "fundHouse": "N/A",
-  "symbol": "AAPL",
-  "companyName": "Apple Inc.",
-  "issuer": "Apple Inc.",
-  "securityType": "Common Stock",
-  "sector": "Technology",
-  "maturityDate": null,
-  "issueDate": "1980-12-12T00:00:00Z",
-  "securityCurrency": {
-    "code": "USD",
-    "name": "US Dollar",
-    "symbol": "$"
-  },
-  "quantity": 100,
-  "marketValue": 15000,
-  "currentValue": 15000,
-  "marketValueOrCurrentValue": 15000,
-  "fxProfitLoss": 0,
-  "profitLoss": 2000,
-  "profitLossRatio": 0.1538,
-  "avgPrice": 130,
-  "marketPrice": 150,
-  "marketQuoteTimestamp": "2024-07-02T10:53:49.087Z",
-  "portfolioUUID": "abcdef12-e89b-12d3-a456-426614174000",
-  "portfolioName": "Tech Growth Portfolio"
-}
+    "securityUUID": "c3bf3210-a24e-4c7b-a530-4b402504f526",
+    "isin": "US5949181045",
+    "name": "Microsoft Corporation",
+    "securityId": "US.NASDAQ/MSFT",
+    "bsSecuritySmallId": null,
+    "bsSecurityMediumId": "US.NASDAQ/MSFT",
+    "assetClass": "EQUITY",
+    "fundManager": null,
+    "fundHouse": null,
+    "symbol": "MSFT",
+    "companyName": "Microsoft Corporation",
+    "issuer": null,
+    "securityType": "Ordinary",
+    "sector": "Technology",
+    "maturityDate": null,
+    "issueDate": "13-03-1986",
+    "securityCurrency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "symbol": "$",
+      "logoKey": "32088395-d294-4a67-89bd-39920bab0385"
+    },
+    "targetCurrency": null,
+    "issuePrice": null,
+    "securityMarket": "NASDAQ",
+    "returnRate": null,
+    "repoType": null,
+    "fractionalQuantityAllow": true,
+    "logoPath": "security-logo/c3bf3210-a24e-4c7b-a530-4b402504f526",
+    "portfolioUUID": "8a208c43-a6a3-4abe-9b36-7339c3c68a53",
+    "portfolioName": "School Fees",
+    "portfolioShortName": "School Fees",
+    "quantity": "13.6973684",
+    "marketValueOrCurrentValue": "87905.3011446",
+    "marketValueOrCurrentValueWithCurrency": "5624.1395486",
+    "fxProfitLoss": "17497.494596124",
+    "profitLoss": "37116.69323445",
+    "profitLossRatio": "73.0807454",
+    "avgPrice": "318.9599915",
+    "accruedInterest": null,
+    "purchaseYield": null,
+    "totalCost": "50788.60791015",
+    "totalCostWithCurrency": "4368.9125084",
+    "profitLossWithCurrency": "1255.2270402",
+    "capitalProfitLossWithCurrency": "1255.2270402",  // (Total profit and loss)
+    "capitalProfitLossWithCurrencyPercentage": "28.7308807", // (Total profit and loss)
+    "nextDividendValueWithCurrency": null,
+    "accruedInterestWithCurrency": null,
+    "marketYield": null,
+    "marketPrice": "410.6000061",
+    "fxMarketQuoteLast": "15.63",
+    "marketQuoteTimestamp": "28-08-2024",
+    "fxMarketQuoteDate": "28-08-2024",
+    "marketCleanPricePercentage": null,
+    "maturityValue": null,
+    "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "symbol": "$",
+      "logoKey": "32088395-d294-4a67-89bd-39920bab0385"
+    },
+    "marketCouponRate": null,
+    "marketValueOrCurrentValueChangePercentage": "-0.7829089",
+    "difference": {
+      "capitalProfitLossWithCurrency": "-44.37933938178968", // (1D change)
+      "capitalProfitLossWithCurrencyPercentage": "-1.0157983" // (1D change)
+    }
+  }
 ```
 
 ### Notes:
