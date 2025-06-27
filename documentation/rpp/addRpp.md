@@ -236,7 +236,7 @@ axios
 ## Notes
 
 1. Ensure that the `clientId` and `portfolioId` are valid UUIDs.
-2. The `installmentAmount` must be greater than zero.
+2. The minimum `installmentAmount` must be equal to the minimum amount of the security.
 3. The `endDate` must be a valid ISO 8601 date and should not be earlier than the `startDate`.
 4. The `channel` field specifies the payment method (e.g., `MTN_GH_DIRECT_DEBIT`).
 5. If the creation fails, check the error message in the response for details on why the operation was unsuccessful.
