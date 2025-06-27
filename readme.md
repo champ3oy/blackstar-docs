@@ -31,6 +31,6 @@ Both request body data and response data are formatted as JSON. Examples are giv
 #### Base URL
 
 - UAT : `https://api.uatdev.blackstargroup.ai`
-- PRODUCTION: `https://api.blackstargroup.ai`
+- PRODUCTION: `[https://api.portal.blackstargroup.ai](https://api.portal.blackstargroup.ai)`
 
 `Note: In PRODUCTION, up to two IP addresses will be whitelisted.`
